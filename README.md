@@ -1,1 +1,1 @@
-# SchroedingersHaus
+# Schrödingers Haus
