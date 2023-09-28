@@ -1,0 +1,182 @@
+@import "src/styles";
+
+.pull-right {
+  @extend .container !optional;
+  justify-content: flex-end;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: Roboto;
+}
+
+.main p{
+  padding-right: 8%;
+}
+
+button{
+  margin-right: 2vw;
+  padding-top: 10px;
+  margin-bottom: 40px;
+  background-color: #db7f8e;
+  //width: 20vw;
+  border-radius: 6px;
+  border: none;
+  font-family: Roboto;
+
+  width: 30vw;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  opacity: 95%;
+  border-radius: 5px;
+  margin-top: 2vh;
+}
+
+/* Main column */
+.main {
+  height: 65vh;
+  /* padding: 1%;*/
+  margin-left: 3%;
+  width: 97%;
+  font-family: "Segoe Script";
+  //font-weight: bold;
+  font-size: 2vh;
+  margin-bottom: 2vh;
+}
+
+
+
+.button:after {
+  content: "";
+  background: cadetblue;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.fakeimg {
+  background-color: white;
+  opacity: 95%;
+  width: 100%;
+  height: 70vh;
+  padding: 20px;
+}
+
+.chatBox {
+  flex: 33%;
+  background-color: lightgrey;
+  opacity: 95%;
+  padding: 10px;
+  height: 67vh;
+  overflow-y: auto;
+  margin-right: 1vw;
+  margin-top: 2vh;
+  border-radius: 5px;
+  margin-bottom: 2vh;
+}
+
+#spielerId{
+  font-weight: bold;
+}
+
+.col-3 menu{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.row{
+  width: 55%;
+}
+
+.main h2{
+  font-family: "Segoe Script";
+}
+
+#previousButton{
+  margin-bottom: 1rem;
+}
+
+.item{
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: auto;
+}
+
+.diaryBox{
+  flex: 66%;
+  height: 70vh;
+}
+
+#spielerId{
+  margin-top: 2vh;
+  color: #db7f8e;
+}
+
+.pull-right{
+  font-size: small;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+  .diaryBox{
+    margin-left: 3%;
+  }
+
+
+
+}
+
+#generateBarCode{
+  opacity: 0%;
+}
+mat-label{
+  color: #db7f8e;
+}
+
+#barcode{
+  padding-top: 1vh;
+}
+
+.sendMessageBtn{
+  color: #db7f8e;
+  background-color: #db7f8e;
+  width: 20vw;
+}
+
+.mat-button.mat-success,
+.mat-stroked-button.mat-success {
+  color: #db7f8e;
+}
+
+
+:host ::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple {
+  background-color: #db7f8e;
+}
+
+.mat-spinner-color::ng-deep circle{
+  stroke: #db7f8e !important;
+}
+
+input {
+
+}
+
+

@@ -1,0 +1,95 @@
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0px;
+    /*background-color: #aaa;*/
+  }
+  
+  img{
+    width: 60px;
+    height: auto;
+  }
+  
+  button{
+    background-color: inherit;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  
+  }
+  
+  /* Main column */
+  .main {
+    height: 78vh;
+    margin: 3vh;
+  
+    font-family: "Big Fish Ensemble";
+    font-weight: bold;
+    font-size: 1.8vh;
+    background-color: white;
+    padding: 20px;
+  
+  
+    background-image: url("../../assets/img/paper.png");
+    background-size: 100% 95%;
+    background-repeat: no-repeat;
+  }
+  
+  .main h2{
+    padding-top: 5%;
+    font-family: "Big Fish Ensemble";
+  }
+  
+  .main p{
+    padding-right: 8%;
+  }
+  
+  footer img {
+    /*position: relative;
+    left: 47.5vw;
+    top: 5vh;*/
+    margin-top: 2.5vh;
+    height: 5vh;
+  }
+  
+  footer{
+    margin: 0px;
+    background-color: grey;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 10vh;
+    width: 100vw;
+  
+    display: flex;
+    justify-content: center;
+  
+  }
+  /*
+  button{
+    margin-right: 2vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*padding-right: 30px;
+    padding-left: 30px;*/
+    /*padding: 0.5vw;
+    width: 35vw;
+  }
+  */
+  .buttonsTogether{
+    width: 83vw;
+    position: absolute;
+    left: 14vw;
+    bottom: 13vh;
+    padding-left: 30px;
+  }
+  
+  
+  
+  

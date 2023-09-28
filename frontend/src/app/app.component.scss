@@ -1,0 +1,98 @@
+#header {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 92vh;
+  margin-top: 2vh;
+  //box-shadow:  0 0 4px 4px #d4d4d4 inset;
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  #header {
+    height: fit-content;
+  }
+}
+
+mat-card{
+  background-image: url("../assets/img/house_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img{
+  margin-top: 0.7vh;
+  width: 4vh;
+}
+
+li {
+  float: left;
+  width: 25%;
+  //display: block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul{
+
+
+  //list-style-type: none;
+  list-style: none;
+  padding-left: 0px;
+
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  text-align: end;
+}
+
+
+
+
+.extraLinks1{
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+}
+
+.extraLinks2{
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+}
+
+.extraLinks3{
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;}
+/*
+.teamLinks li a:hover {
+  background-color: grey;
+  opacity: 80%;
+}
+*/
+
+
+.extraLinks1:hover {
+  background-color: #db7f8e;
+  opacity: 80%;}
+
+.extraLinks2:hover {
+  background-color: #db7f8e;
+  opacity: 80%;}
+
+.extraLinks3:hover {
+  background-color: #db7f8e;
+  opacity: 80%;}
+
+.mat-spinner-color::ng-deep circle{
+  stroke: #db7f8e !important;
+}
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #db7f8e
+}
+

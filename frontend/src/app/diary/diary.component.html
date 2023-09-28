@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <br>
+    <h2>{{diary.date}}</h2>
+    <p>{{diary.entry}}</p>
+    <br>
+    <div class="buttonsTogether">
+      <button (click)="previousPage()"><img src="assets/img/arrow_left.png"></button>
+      <button (click)="nextPage()"><img src="assets/img/arrow_right.png"></button>
+    </div>
+
+    <!-- Chat in eigenem Component
+    <img (click)="chat()" src="assets/chat.png">
+    -->
+  </div>
+
+  <footer>
+     <img (click)="chat()" src="assets/img/chatIcon.png">
+  </footer>
+
+</body>

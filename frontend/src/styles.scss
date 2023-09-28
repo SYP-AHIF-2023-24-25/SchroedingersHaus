@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files
+@tailwind base;
+@tailwind components;
+@tailwind utilities;*/
+
+body {
+  font-family: Roboto;
+  background-color: #DBE9EE;
+}
+
+button{
+  margin-right: 2vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: #4A6FA5;
+  width: 10vw;
+  border-radius: 6px;
+  border: none;
+}
+
+.lobby-ges{
+  width: 215px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+  opacity: 95%;
+}
+
+.joinLobbyButton{
+  width: 182px;
+}
+
+.user-ges{
+  //width: 18.5vw;
+  width: 215px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+  opacity: 95%;
+}
+
+.input{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mat-spinner-color::ng-deep circle{
+  stroke: #db7f8e !important;
+}
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #db7f8e !important;
+}
+
+.mat-button.mat-success,
+.mat-stroked-button.mat-success {
+  color: #db7f8e !important;
+}
+
+.mat-button, .mat-raised-button{
+  background-color: #db7f8e !important;
+}

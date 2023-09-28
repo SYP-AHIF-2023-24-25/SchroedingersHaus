@@ -1,0 +1,51 @@
+body{
+  border-radius: 5px;
+}
+
+h2{
+  float: left;
+}
+img{
+  width: 120px;
+  float: right;
+  margin-right: 2vw;
+  padding-left: 1vw;
+}
+.divForEach {
+  display: flex;
+  flex-wrap: nowrap;
+  opacity: 95%;
+  padding: 10px;
+  height: 70vh;
+  margin: 2vw;
+  border-radius: 5px;
+  // overflow-y: auto;
+}
+
+.nameForEach > div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+
+.nameForEach{
+  background-color: lightgrey;
+  margin-right: 1vw;
+  padding-left: 2vw;
+  border-radius: 5px;
+
+}
+
+p{
+  margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+  .divForEach {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,50 @@
+<!--Button and Input Elements-->
+<button *ngIf="showEvents1" type="button" class="py-2 px-8 first-letter:mb-2 text-white bg-lime-500 buttonToFade"
+        @fade
+        (@fade.start)="toggleFlag = true"
+        (@fade.done)="toggleFlag = false"
+        (click)="toggleEvents1()">Start Game</button>
+
+<input *ngIf="!showEvents1" id="name" type="text" class=" buttonToFade" placeholder="Enter Pin" (keyup)="handleKeyUp($event)">
+
+<!--background Switch-->
+<ng-container *ngIf="showEvents1">
+  <div
+    class="item p-4 rounded-xl w-full mb-4 backgroundImageFade"
+    @fade
+    (@fade.start)="toggleFlag = true"
+    (@fade.done)="toggleFlag = false"
+  >
+  </div>
+
+
+  <!-- The video-->
+  <button class="videoPlayButton" onclick="playPause()"></button>
+  <video id="myVideo">
+    <source src="../../assets/vids/entry_doors.mp4" type="video/mp4" >
+    Your browser does not support HTML5 video.
+  </video>
+
+  <script>
+    var myVideo = document.getElementById("myVideo");
+
+    function playPause() {
+      if (myVideo.paused)
+        myVideo.play();
+      else
+        myVideo.pause();
+    }
+  </script>
+</ng-container>
+
+
+<ng-container *ngIf="!showEvents1">
+  <div
+    class="item p-4 rounded-xl w-full mb-4 backgroundImagePin"
+    @fade
+    (@fade.start)="toggleFlag = true"
+    (@fade.done)="toggleFlag = false"
+  >
+  </div>
+</ng-container>
+

@@ -1,0 +1,66 @@
+<head>
+  <title>Chat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <title>Testing QR code</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type="text/javascript">
+    function generateBarCode()
+    {
+      var nric = $('#text').val();
+      var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + nric + '&amp;size=50x50';
+      $('#barcode').attr('src', url);
+    }
+  </script>
+</head>
+
+<body>
+<input id="generateBarCode" type="text"
+       value="" style="Width:0%"
+       onblur='generateBarCode();' />
+
+<img id='barcode'
+     src="https://api.qrserver.com/v1/create-qr-code/?data=http://localhost:4200/login-user/{{this.lobbyId}}&amp;size=100x100"
+     alt=""
+     title="localhost"
+     width="50"
+     height="50" />
+
+<div class="diaryBox">
+  <div class="item">
+    <div class="main">
+      <br>
+      <h2>{{diary.date}}</h2>
+      <p>{{diary.entry}}</p>
+      <br>
+      <button class="buttonText" id="previousButton"(click)="previousPage()">Previous Page</button>
+      <button (click)="nextPage()">Next Page</button>
+    </div>
+  </div>
+</div>
+
+<div class="diaryBox">
+  <div class="chatBox">
+    <label id="spielerId">Player {{userName}}</label>
+    <h2>Live Chat</h2>
+    <mat-card *ngIf="messages !== null">
+      <mat-card class="input">
+        <mat-form-field>
+          <mat-label>Enter Message</mat-label>
+          <input matInput type="text" (keydown.enter)='sendMessage()' [(ngModel)]="message" autofocus id="inputMessage" placeholder="Enter message" type="text">
+        </mat-form-field>
+        <button id="sendMessageBtn" mat-raised-button color="primary" [disabled]="message === null" (click)="sendMessage()">Send</button>
+      </mat-card>
+      <mat-card class="message" *ngFor="let message of displayMessages">
+        <div class="pull-right">
+          {{message.dateTime | date: "dd.MM.yyyy HH:mm"}}
+        </div>
+        <div>
+          {{message.message}}
+        </div>
+      </mat-card>
+    </mat-card>
+  </div>
+</div>

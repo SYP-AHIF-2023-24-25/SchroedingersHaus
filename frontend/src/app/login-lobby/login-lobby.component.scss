@@ -1,0 +1,20 @@
+@import "src/styles";
+
+button{
+  background-color: #db7f8e;
+}
+
+mat-label{
+  color: #db7f8e;
+}
+
+.mat-spinner-color::ng-deep circle{
+  stroke: #db7f8e !important;
+}
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #db7f8e
+}
+
+:host ::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple {
+  background-color: #db7f8e;
+}

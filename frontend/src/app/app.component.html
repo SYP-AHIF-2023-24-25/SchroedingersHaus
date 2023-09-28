@@ -1,0 +1,24 @@
+<link rel="icon" type="image/x-icon" href="src/assets/logo.png">
+
+<mat-card id="header">
+
+    <!--<mat-card-title>Schrödinger's House</mat-card-title>-->
+    <ul>
+      <div class="teamLinks">
+      <li class="extraLinks"><a href="src/app/login-lobby/login-lobby.component.html">
+        <img src="assets/logo.png">
+      </a>
+      </li>
+
+      <li class="extraLinks1"><a routerLink="team">Team</a></li>
+      <li class="extraLinks2"><a routerLink="howTo">How to Play</a></li>
+      <li class="extraLinks3"><a routerLink="trailer">Trailer</a></li>
+      </div>
+    </ul>
+
+  <mat-card-content>
+    <router-outlet></router-outlet>
+  </mat-card-content>
+</mat-card>
+
+
