@@ -14,13 +14,13 @@ Der VR Escape Room ist eine Diplomarbeit aus dem Jahr 2023, die von uns verbesse
 
 ### 1.2 Verbesserungspotential 
 
-Probleme 
+#### Probleme 
 
 * Website skaliert nicht 
 * LobbyID Error-Handling nicht optimal 
 * Trailer nicht verfügbar 
 
-Verbesserungen 
+#### Verbesserungen 
 
 * Backend von Java auf C# ändern 
 
