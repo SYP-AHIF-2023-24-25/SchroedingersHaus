@@ -10,7 +10,7 @@ Abazovic Emina, Aschenberger Maria, Böhm Sophie, Stieg Seppi
 
 ### 1.1. Ist-Situation 
 
-Der VR Escape Room ist eine Diplomarbeit aus dem Jahr 2023, die von uns verbessert und fortgesetzt wird. Schrödinger’s besteht aus vier Räumen. Das Ziel des Spielers ist es, alle Rätsel zu lösen und so aus dem Haus zu entkommen. Dabei können, durch einen Multiplayer-Modus, Zuschauer dem VR-Spieler helfen und so selbst am Spiel teilnehmen. Die Webseite kann unkompliziert von jedem Gerät aus mittels QR-Code aufgerufen werden. Es soll ca. eine halbe Stunde Spielspaß bieten. Die Ziele setzt sich das Projektteam selbst.
+Der VR Escape Room ist eine Diplomarbeit aus dem Jahr 2023, die von uns verbessert und fortgesetzt wird. Schrödinger’s Haus besteht aus vier Räumen. Das Ziel des Spielers ist es, alle Rätsel zu lösen und so aus dem Haus zu entkommen. Dabei können, durch einen Multiplayer-Modus, Zuschauer dem VR-Spieler helfen und so selbst am Spiel teilnehmen. Die Webseite kann unkompliziert von jedem Gerät aus mittels QR-Code aufgerufen werden. Es soll ca. eine halbe Stunde Spielspaß bieten. Die Ziele setzt sich das Projektteam selbst.
 
 ### 1.2 Verbesserungspotential 
 
