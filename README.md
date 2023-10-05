@@ -48,7 +48,7 @@ Unser Ziel ist es, ein Projekt von höchster Qualität und maximaler Effizienz z
 * Unity
 * Cinema 4D
 
-### 4.2 Meilensteine (Wintersemester, Sommersemester) 
+### 4.2 Meilensteine 
 
 #### Wintersemester
 * Anwendung Testen und weitere Fehler suchen 
