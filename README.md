@@ -28,12 +28,11 @@ Der VR Escape Room ist eine Diplomarbeit aus dem Jahr 2023, die von uns verbesse
 
 ### 2.1 Soll-Zustand
 
-Unser Ziel ist es, ein Projekt von höchster Qualität und maximaler Effizienz zu realisieren und somit dem User ein angenehmes Spielerlebnis zu bieten. 
-
+Unser Ziel ist es, ein  VR-Spiel zu entwickeln, welches die HTL Leonding vorzeigen kann, wenn sie die Oculus Quest 2 oder Oculus Rift bei Events ausstellt
 ## 3. Risikoanalyse 
 
 ### 3.1 Chancen 
-* VR-Spiel entwickeln, welches die HTL Leonding vorzeigen kann, wenn sie die Oculus Quest 2 oder Oculus Rift bei Events ausstellt
+* Neue Technologien kennenlernen 
 
 ### 3.2 Projektrisiken 
 
