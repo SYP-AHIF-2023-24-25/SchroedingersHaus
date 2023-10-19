@@ -10,7 +10,17 @@ Abazovic Emina, Aschenberger Maria, Böhm Sophie, Stieg Seppi
 
 ### 1.1. Ist-Situation 
 
-Der VR Escape Room ist eine Diplomarbeit aus dem Jahr 2023, die von uns verbessert und fortgesetzt wird. Schrödinger’s Haus besteht aus vier Räumen. Das Ziel des Spielers ist es, alle Rätsel zu lösen und so aus dem Haus zu entkommen. Dabei können, durch einen Multiplayer-Modus, Zuschauer dem VR-Spieler helfen und so selbst am Spiel teilnehmen. Die Webseite kann unkompliziert von jedem Gerät aus mittels QR-Code aufgerufen werden. Es soll ca. eine halbe Stunde Spielspaß bieten. 
+Der VR Escape Room ist eine Diplomarbeit aus dem Jahr 2023, die von uns verbessert und fortgesetzt wird. Schrödinger’s Haus besteht aus vier Räumen. Das Ziel des Spielers ist es, alle Rätsel zu lösen und so aus dem Haus zu entkommen. Dabei können, durch einen Multiplayer-Modus, Zuschauer dem VR-Spieler helfen und so selbst am Spiel teilnehmen. Die Webseite kann unkompliziert von jedem Gerät aus mittels QR-Code aufgerufen werden. Es soll ca. eine halbe Stunde Spielspaß bieten.
+
+#### Räume
+
+Kinderzimmer 
+
+Bibliothek
+
+Labor 
+
+Kerker 
 
 ### 1.2 Verbesserungspotential 
 
@@ -22,22 +32,25 @@ Der VR Escape Room ist eine Diplomarbeit aus dem Jahr 2023, die von uns verbesse
 
 #### Verbesserungen 
 
-* Login
+* Datenmodell
+* Chat 
 
 ## 2. Zielsetzung 
 
 ### 2.1 Soll-Zustand
 
-Unser Ziel ist es, ein  VR-Spiel zu entwickeln, welches die HTL Leonding vorzeigen kann, wenn sie die Oculus Quest 2 oder Oculus Rift bei Events ausstellt
+Unser Ziel ist es, ein Escape Room VR-Spiel zu entwickeln, welches die HTL Leonding vorzeigen kann, wenn sie die Oculus Quest 2 oder Oculus Rift bei Events ausstellt. 
+
 ## 3. Risikoanalyse 
 
 ### 3.1 Chancen 
 * Neue Technologien kennenlernen 
+* Zweigübergreifende Zusammenarbeit 
 
 ### 3.2 Projektrisiken 
 
 * Komplikationen, da wir noch nie mit VR gearbeitet haben 
-* hoher Zeitaufwand, sich in das Projekt einzufinden 
+* hoher Zeitaufwand sich in das Projekt einzufinden 
 
 ## 4. Projektablauf 
 
@@ -53,7 +66,8 @@ Unser Ziel ist es, ein  VR-Spiel zu entwickeln, welches die HTL Leonding vorzeig
 * Anwendung Testen und weitere Fehler suchen 
 * Aufgabenzuweisung 
 * Fehler beheben 
+* neues Web-Design 
 
 #### Sommersemester
 * alle Fehler beheben 
-* neues Web-Design 
+* neue Features hinzufügen 
