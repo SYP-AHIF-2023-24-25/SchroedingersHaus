@@ -1,0 +1,7 @@
+@startuml
+(**Schroedingers Haus**) -- (Projektteam\n **+**)
+
+(Auftraggeber\n **+**) -- (**Schroedingers Haus**)
+
+(Spieler\n **+**) -- (**Schroedingers Haus**)
+@enduml
