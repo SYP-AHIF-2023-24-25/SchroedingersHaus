@@ -3,7 +3,7 @@
         @fade
         (@fade.start)="toggleFlag = true"
         (@fade.done)="toggleFlag = false"
-        (click)="toggleEvents1()">Start Game</button>
+        (click)="toggleEvents1()">Spiel Starten</button>
 
 <input *ngIf="!showEvents1" id="name" type="text" class=" buttonToFade" placeholder="Enter Pin" (keyup)="handleKeyUp($event)">
 
