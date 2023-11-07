@@ -1,8 +1,28 @@
 @import "src/styles";
 
+body{
+  height: 100vh;
+}
+
 button{
   background-color: #db7f8e;
 }
+
+
+#lobby{
+  border-radius: 30px;
+  padding: 10vh;
+}
+
+.lobby-ges{
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20vh auto auto auto;
+  opacity: 95%;
+}
+
 
 mat-label{
   color: #db7f8e;

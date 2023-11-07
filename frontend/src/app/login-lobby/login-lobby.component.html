@@ -1,18 +1,20 @@
 <div class="lobby-ges">
 
-<mat-card class="input" *ngIf="!inProgress">
+  <div  class="lobbyInput">
+    <mat-card class="input" *ngIf="!inProgress" id="lobby">
+      <mat-form-field>
+        <mat-label>Lobby ID</mat-label>
+          <input matInput type="text" [(ngModel)]="lobbyId" (keydown.enter)='loginLobby()' autofocus>
+        </mat-form-field><br>
+    
+        <button class="joinLobbyButton" mat-raised-button
+              [disabled]="lobbyId === null || inProgress"
+              (click)="loginLobby()">Lobby beitreten</button>
+    </mat-card>
+  
+    <mat-card *ngIf="inProgress">
+      <mat-spinner></mat-spinner>
+    </mat-card>
+  </div>
 
-    <mat-form-field>
-      <mat-label>Lobby ID</mat-label>
-      <input matInput type="text" [(ngModel)]="lobbyId" (keydown.enter)='loginLobby()' autofocus>
-    </mat-form-field>
-  <br>
-    <button class="joinLobbyButton" mat-raised-button
-            [disabled]="lobbyId === null || inProgress"
-            (click)="loginLobby()">Lobby beitreten</button>
-  </mat-card>
-
-  <mat-card *ngIf="inProgress">
-    <mat-spinner></mat-spinner>
-  </mat-card>
 </div>

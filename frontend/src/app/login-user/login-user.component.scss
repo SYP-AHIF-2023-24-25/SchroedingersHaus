@@ -4,6 +4,20 @@ button{
   background-color: #db7f8e;
 }
 
+#user{
+  border-radius: 30px;
+  padding: 10vh;
+}
+
+.user-ges{
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20vh auto auto auto;
+  opacity: 95%;
+}
+
 mat-label{
   color: #db7f8e;
 }

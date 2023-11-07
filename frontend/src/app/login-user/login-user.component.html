@@ -1,15 +1,20 @@
 <div class="user-ges">
-<mat-card class="input" *ngIf="!inProgress">
-  <mat-form-field>
-    <mat-label>Username</mat-label>
-    <input matInput type="text" id="myInput" (keydown.enter)='loginUser()' autofocus [(ngModel)]="userName">
-  </mat-form-field>
-  <br>
-  <button mat-raised-button class="joinLobbyButton"
-          [disabled]="userName === null || inProgress"
-          (click)="loginUser()" >Start Chat</button>
-</mat-card>
-<mat-card *ngIf="inProgress">
-  <mat-spinner color="accent"></mat-spinner>
-</mat-card>
+
+  <div class="userInput">
+    <mat-card class="input" *ngIf="!inProgress" id="user">
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+          <input matInput type="text" id="myInput" (keydown.enter)='loginUser()' autofocus [(ngModel)]="userName">
+      </mat-form-field><br>
+  
+      <button mat-raised-button class="joinLobbyButton"
+            [disabled]="userName === null || inProgress"
+            (click)="loginUser()" >Start Chat</button>
+    </mat-card>
+  
+    <mat-card *ngIf="inProgress">
+      <mat-spinner color="accent"></mat-spinner>
+    </mat-card>
+  </div> 
+  
 </div>
