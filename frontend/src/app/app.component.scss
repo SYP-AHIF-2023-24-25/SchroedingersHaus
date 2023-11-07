@@ -1,12 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+//colors
+$background: #120303;
+$button: #95091D;
+$LinkHover: #E1D7C0;
+
+
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  max-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
 #header {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 92vh;
-  margin-top: 2vh;
+  width: 100%;
+  height: 96vh;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 4vh;
   //box-shadow:  0 0 4px 4px #d4d4d4 inset;
-
-
 }
 
 
@@ -17,12 +37,12 @@
 }
 
 mat-card{
-  background-image: url("../assets/img/house_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #120303;
+  margin: 0;
+  padding: 0;
 }
 
-img{
+img{ //Logo
   margin-top: 0.7vh;
   width: 4vh;
 }
@@ -35,21 +55,21 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #000;
   text-align: center;
   text-decoration: none;
 }
 
 ul{
-
-
   //list-style-type: none;
   list-style: none;
   padding-left: 0px;
 
+  width: 80vw;
+  margin: 0 auto;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 50px;
   text-align: end;
 }
 
@@ -78,21 +98,20 @@ ul{
 
 
 .extraLinks1:hover {
-  background-color: #db7f8e;
+  background-color: $LinkHover;
   opacity: 80%;}
 
 .extraLinks2:hover {
-  background-color: #db7f8e;
+  background-color: $LinkHover;
   opacity: 80%;}
 
 .extraLinks3:hover {
-  background-color: #db7f8e;
+  background-color: $LinkHover;
   opacity: 80%;}
 
 .mat-spinner-color::ng-deep circle{
-  stroke: #db7f8e !important;
+  stroke: $LinkHover !important;
 }
 .mat-progress-spinner circle, .mat-spinner circle {
-  stroke: #db7f8e
+  stroke: $LinkHover;
 }
-

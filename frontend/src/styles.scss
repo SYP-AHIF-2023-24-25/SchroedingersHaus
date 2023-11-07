@@ -3,60 +3,56 @@
 @tailwind components;
 @tailwind utilities;*/
 
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Roboto:wght@300;400&display=swap');
+
+//colors
+$background: #120303;
+$button: #95091D;
+$LinkHover: #E1D7C0;
+
 body {
   font-family: Roboto;
-  background-color: #DBE9EE;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
 }
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  border-radius: 0;
+}
+
 
 button{
   margin-right: 2vw;
   padding-top: 10px;
   padding-bottom: 10px;
 
-  background-color: #4A6FA5;
   width: 10vw;
-  border-radius: 6px;
+  border-radius: 50px;
   border: none;
 }
 
-.lobby-ges{
-  width: 215px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30vh;
-  opacity: 95%;
+.mat-form-field-appearance-legacy .mat-form-field-wrapper { //input
+  width: 30vw;
 }
 
 .joinLobbyButton{
-  width: 182px;
-}
-
-.user-ges{
-  //width: 18.5vw;
-  width: 215px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30vh;
-  opacity: 95%;
-}
-
-.input{
-  margin-left: auto;
-  margin-right: auto;
+  width: 30vw;
 }
 
 .mat-spinner-color::ng-deep circle{
-  stroke: #db7f8e !important;
+  stroke: $button !important;
 }
 .mat-progress-spinner circle, .mat-spinner circle {
-  stroke: #db7f8e !important;
+  stroke: $button !important;
 }
 
 .mat-button.mat-success,
 .mat-stroked-button.mat-success {
-  color: #db7f8e !important;
+  color: black !important;
 }
 
 .mat-button, .mat-raised-button{
-  background-color: #db7f8e !important;
+  background-color: $button !important;
 }
