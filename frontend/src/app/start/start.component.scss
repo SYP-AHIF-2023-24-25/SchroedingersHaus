@@ -1,112 +1,111 @@
 *{
-    text-align: center;
-  }
-  
-  .backgroundImageFade{
-    background-image: url("../../assets/vids/intro.mp4");
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-  
-    position: absolute;
-    top: 0px;
-    right: 0px;
-  
-    z-index: -100;
-  
-    border-radius: 0%;
-    text-align: center;
-  
-  }
-  
-  .backgroundImagePin{
-    background-color: orange;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-  
-    position: absolute;
-    top: 0px;
-    right: 0px;
-  
-    z-index: -100;
-  
-    border-radius: 0%;
-    text-align: center;
-  
-  }
-  
-  .buttonToFade{
-    width: 20vw;
-    height: 10vh;
-  
-    position: absolute;
-    top: 45vh;
-    right: 40vw;
-  
-    z-index: 100;
-  
-    border-radius: 20px;
-    background-color: yellow;
-  }
-  
-  .pinToEnter{
-  
-    width: 20vw;
-    height: 10vh;
-  
-    position: absolute;
-    top: 45vh;
-    right: 40vw;
-  
-    z-index: 100;
-  
-    border-radius: 20px;
-    background-color: #ffff00;
-  
-    color: black;
-    text-align: center;
-  }
-  
-  
-  /* Style the video: 100% width and height to cover the entire window */
-  #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  
-  }
-  
-  
-  placeForButtons{
-    width: 20vw;
-    height: 20vh;
-  
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 200;
-    background-color: midnightblue;
-    text-align: center;
-  }
-  
-  .videoPlayButton{
-    width: 20vw;
-    height: 40vh;
-  
-    position: absolute;
-    top: 30vh;
-    right: 39vw;
-  
-    z-index: 100;
-  
-    border: none;
-    background-color: initial;
-  }
-  
-  .videoPlayButton:active{
-    background-color: red;
-  }
-  
+  text-align: center;
+}
+
+.backgroundImageFade{
+  background-image: url("../../assets/vids/intro.mp4");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  z-index: -100;
+
+  border-radius: 0%;
+  text-align: center;
+
+}
+
+.backgroundImagePin{
+  background-color: orange;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  z-index: -100;
+
+  border-radius: 0%;
+  text-align: center;
+
+}
+
+.buttonToFade{
+  width: 20vw;
+  height: 10vh;
+
+  position: absolute;
+  top: 45vh;
+  right: 40vw;
+
+  z-index: 100;
+
+  border-radius: 20px;
+  background-color: yellow;
+}
+
+.pinToEnter{
+
+  width: 20vw;
+  height: 10vh;
+
+  position: absolute;
+  top: 45vh;
+  right: 40vw;
+
+  z-index: 100;
+
+  border-radius: 20px;
+  background-color: #ffff00;
+
+  color: black;
+  text-align: center;
+}
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+
+}
+
+
+placeForButtons{
+  width: 20vw;
+  height: 20vh;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 200;
+  background-color: midnightblue;
+  text-align: center;
+}
+
+.videoPlayButton{
+  width: 20vw;
+  height: 40vh;
+
+  position: absolute;
+  top: 30vh;
+  right: 39vw;
+
+  z-index: 100;
+
+  border: none;
+  background-color: initial;
+}
+
+.videoPlayButton:active{
+  background-color: red;
+}
