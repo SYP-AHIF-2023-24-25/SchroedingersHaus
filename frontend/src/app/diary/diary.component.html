@@ -11,9 +11,12 @@
 
   <div class="main">
     <br>
-    <h2>{{diary.date}}</h2>
-    <p>{{diary.entry}}</p>
+    <div id="diary">
+      <h2>{{diary.date}}</h2>
+      <p>{{diary.entry}}</p>
+    </div>
     <br>
+    
     <div class="buttonsTogether">
       <button (click)="previousPage()"><img src="assets/img/arrow_left.png"></button>
       <button (click)="nextPage()"><img src="assets/img/arrow_right.png"></button>

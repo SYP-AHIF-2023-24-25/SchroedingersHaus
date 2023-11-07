@@ -35,31 +35,32 @@
       <h2>{{diary.date}}</h2>
       <p>{{diary.entry}}</p>
       <br>
-      <button class="buttonText" id="previousButton"(click)="previousPage()">Previous Page</button>
-      <button (click)="nextPage()">Next Page</button>
+      <button class="buttonText" id="previousButton"(click)="previousPage()">Vorherige Seite</button>
+      <button (click)="nextPage()">Nächste Seite</button>
     </div>
   </div>
 </div>
 
 <div class="diaryBox">
   <div class="chatBox">
-    <label id="spielerId">Player {{userName}}</label>
+    <label id="spielerId">Spieler: {{userName}}</label>
     <h2>Live Chat</h2>
     <mat-card *ngIf="messages !== null">
-      <mat-card class="input">
-        <mat-form-field>
-          <mat-label>Enter Message</mat-label>
-          <input matInput type="text" (keydown.enter)='sendMessage()' [(ngModel)]="message" autofocus id="inputMessage" placeholder="Enter message" type="text">
-        </mat-form-field>
-        <button id="sendMessageBtn" mat-raised-button color="primary" [disabled]="message === null" (click)="sendMessage()">Send</button>
-      </mat-card>
       <mat-card class="message" *ngFor="let message of displayMessages">
         <div class="pull-right">
           {{message.dateTime | date: "dd.MM.yyyy HH:mm"}}
         </div>
-        <div>
+        <div id="message">
           {{message.message}}
         </div>
+      </mat-card>
+
+      <mat-card class="input" id="inputMessageAll">
+        <mat-form-field>
+          <mat-label>Gib eine Nachricht ein</mat-label>
+          <input matInput type="text" (keydown.enter)='sendMessage()' [(ngModel)]="message" autofocus id="inputMessage" placeholder="Enter message" type="text">
+        </mat-form-field>
+        <button id="sendMessageBtn" mat-raised-button color="primary" [disabled]="message === null" (click)="sendMessage()">Senden</button>
       </mat-card>
     </mat-card>
   </div>
