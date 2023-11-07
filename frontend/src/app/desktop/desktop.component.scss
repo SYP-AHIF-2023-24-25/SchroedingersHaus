@@ -1,161 +1,160 @@
 img{
-    width: 100px;
+  width: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title
+.header {
+  padding: 40px;
+  text-align: center;
+  background: yellow;
+  color: black;
+  font-family: "Big Fish Ensemble";
+  font-weight: bold;
+  font-size: x-large;
+}*/
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  font-family: "Big Fish Ensemble";
+  font-weight: bold;
+  font-size: x-large;
+  background-color: white;
+  padding: 20px;
+
+  background-image: url("../../assets/img/paper.png");
+  background-size: 99% 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main h2{
+  padding-top: 5%;
+  font-family: "Big Fish Ensemble";
+}
+.main p{
+  padding-right: 8%;
+
+}
+
+button{
+  background-color: inherit;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+.buttonsGes{
+  margin-left: 20vw;
+}
+
+button{
+  margin-bottom: 25%;
+}
+
+.button {
+  position: relative;
+  background-color: cadetblue;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: cadetblue;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+}*/
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
   }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  /* Style the body */
-  body {
-    font-family: Arial;
-    margin: 0;
-  }
-  
-  /* Header/logo Title
-  .header {
-    padding: 40px;
-    text-align: center;
-    background: yellow;
-    color: black;
-    font-family: "Big Fish Ensemble";
-    font-weight: bold;
-    font-size: x-large;
-  }*/
-  
-  /* Style the top navigation bar */
-  .navbar {
-    display: flex;
-    background-color: #333;
-  }
-  
-  /* Style the navigation bar links */
-  .navbar a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  /* Change color on hover */
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Column container */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  .side {
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
-  }
-  
-  /* Main column */
-  .main {
-    flex: 70%;
-    font-family: "Big Fish Ensemble";
-    font-weight: bold;
-    font-size: x-large;
-    background-color: white;
-    padding: 20px;
-  
-    background-image: url("../../assets/img/paper.png");
-    background-size: 99% 95%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .main h2{
-    padding-top: 5%;
-    font-family: "Big Fish Ensemble";
-  }
-  .main p{
-    padding-right: 8%;
-  
-  }
-  
-  button{
-    background-color: inherit;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  
-  }
-  
-  .buttonsGes{
-    margin-left: 20vw;
-  }
-  
-  button{
-    margin-bottom: 25%;
-  }
-  
-  .button {
-    position: relative;
-    background-color: cadetblue;
-    border: none;
-    font-size: 28px;
-    color: #FFFFFF;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  .button:after {
-    content: "";
-    background: cadetblue;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-  }
-  
-  .button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  }
-  
-  /* Fake image, just for this example */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  /* Footer
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  
-  }*/
-  
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 700px) {
-    .row, .navbar {
-      flex-direction: column;
-    }
-  }
-  
+}
