@@ -12,6 +12,17 @@ Abazovic Emina, Aschenberger Maria, Böhm Sophie, Stieg Seppi
 
 Der VR Escape Room ist eine Diplomarbeit aus dem Jahr 2023, die von uns verbessert und fortgesetzt wird. Schrödinger’s Haus besteht aus vier Räumen. Das Ziel des Spielers ist es, alle Rätsel zu lösen und so aus dem Haus zu entkommen. Dabei können, durch einen Multiplayer-Modus, Zuschauer dem VR-Spieler helfen und so selbst am Spiel teilnehmen. Die Webseite kann unkompliziert von jedem Gerät aus mittels QR-Code aufgerufen werden. Es soll ca. eine halbe Stunde Spielspaß bieten.
 
+#### Wie funktioniert unser Spiel?
+
+Der Hauptspieler startet das Spiel in der Quest App. Wenn er die VR-Brille aufsetzt, 
+erscheint eine Lobby-ID. Diese wird von den Mitspielern benötigt, um sich für den Chat anmelden zu können. 
+Wenn die Lobby-ID richtig war, muss man einen Usernamen eingeben. Ist dieser noch nicht vergeben wird man 
+automatisch auf die Hauptseite weitergeleitet. Auf dieser werden verschiedene Geschichten angezeigt, 
+die mehrere Rätsel für die Mitspieler enthalten. Diese Aufgaben müssen gelöst werden, um dem Hauptspieler das 
+Fertigstellen eines Raumes zu ermöglichen. Die Ergebnisse eines Rätsels müssen über das Chatfenster eingegeben werden, 
+um dem Hauptspieler angezeigt zu werden und diesem zu Helfen. Es gibt vier Räume (Kinderzimmer, Bibliothek, Labor, Keller), 
+die erfolgreich abgeschlossen werden müssen um das Spielende zu erreichen.
+
 #### Räume
 
 Kinderzimmer 
