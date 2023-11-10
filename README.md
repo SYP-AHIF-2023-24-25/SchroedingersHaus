@@ -27,7 +27,6 @@ die erfolgreich abgeschlossen werden müssen um das Spielende zu erreichen.
 
 Kinderzimmer 
 
-image::pictures/childrensRoom.jpg [Childrens Room]
 <img src="pictures/childrensRoom.jpg" alt="Childrens Room">
 
 Bibliothek
