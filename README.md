@@ -53,6 +53,7 @@ Kerker
 
 * Datenmodell
 * Chat 
+* Spielstand
 
 ## 2. Zielsetzung 
 
