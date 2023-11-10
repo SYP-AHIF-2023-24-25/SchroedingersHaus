@@ -26,14 +26,16 @@ die erfolgreich abgeschlossen werden müssen um das Spielende zu erreichen.
 #### Räume
 
 Kinderzimmer 
-
 <img src="pictures/childrensRoom.jpg" alt="Childrens Room">
 
 Bibliothek
+<img src="pictures/library.jpg" alt="Childrens Room">
 
 Labor 
+<img src="pictures/laboratory.jpg" alt="Childrens Room">
 
 Kerker 
+<img src="pictures/dungeon.jpg" alt="Childrens Room">
 
 ### 1.2 Verbesserungspotential 
 
