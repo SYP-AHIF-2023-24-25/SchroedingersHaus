@@ -8,6 +8,8 @@ Ein Virtual Reality Escape Room mit Website Multiplayer-Funktion. Der VR Spieler
  
 Abazovic Emina, Aschenberger Maria (Scrum Master), Böhm Sophie, Stieg Seppi
 
+## Projektantrag
+
 ## 1. Ausgangslage 
 
 ### 1.1. Ist-Situation 
@@ -91,3 +93,27 @@ Unser Ziel ist es, ein Escape Room VR-Spiel zu entwickeln, welches die HTL Leond
 #### Sommersemester
 * alle Fehler beheben 
 * neue Features hinzufügen 
+
+## User Stories
+
+### Vr-Spieler:
+
+#### neues Spiel:
+* Der User startet das Spiel auf der VR Brille und erhält eine neue LobbyID 
+* Der User startet bei neuer LobbyID im Kinderzimmer 
+* Der User erhält Hinweise und Aufgaben von seinen Mitspielern durch einen eingeblendeten Chat 
+* Der User löst Rätsel des aktuellen Raumes um in den nächsten fortzuschreiten 
+* Der User kann während des Spiels den Spielstand jederzeit speichern
+
+#### altes Spiel:
+* Der User kann ein gespeichertes Spiel weiterspielen
+* Der User startet das Spiel und steigt mit der bereits vorhandenen LobbyID ein 
+* Der User startet im zuletzt besuchten Raum 
+
+### Mitspieler:
+* Weitere User steigen über die LobbyID oder den QR Code mit einem Username in den Chatroom ein 
+* Die User erhalten bei falscher LobbyId oder bereits vergebenem Username eine Fehlermeldung 
+* Die User sehen nach Einstieg eine Liste von allen Mitspielern in der selben Lobby 
+* Die User können mit ihren Mitspielern und dem VR-Spieler über den Chat kommunizieren 
+* Die User können durch eine vorgegebene Geschichte, die zu den jeweiligen Räumen gehört, durchblättern
+* Die User müssen im laufe der Geschichte verschiedene Rätsel und Mini-Games lösen um dem VR-Spieler zu helfen
