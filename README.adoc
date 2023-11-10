@@ -4,7 +4,7 @@ Ein Virtual Reality Escape Room mit Website Multiplayer-Funktion. Der VR Spieler
 
 ## Team
  
-Abazovic Emina, Aschenberger Maria, Böhm Sophie, Stieg Seppi
+Abazovic Emina, Aschenberger Maria (Scrum Master), Böhm Sophie, Stieg Seppi
 
 ## 1. Ausgangslage 
 
