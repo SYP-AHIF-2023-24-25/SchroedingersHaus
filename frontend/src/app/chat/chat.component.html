@@ -44,6 +44,8 @@
 <div class="diaryBox">
   <div class="chatBox">
     <label id="spielerId">Spieler: {{userName}}</label>
+    <!-- <br>
+    <label>Alle Spieler: {{users}}</label> -->
     <h2>Live Chat</h2>
     <mat-card *ngIf="messages !== null">
       <mat-card class="message" *ngFor="let message of displayMessages">
@@ -65,3 +67,7 @@
     </mat-card>
   </div>
 </div>
+
+<mat-card>
+
+</mat-card>

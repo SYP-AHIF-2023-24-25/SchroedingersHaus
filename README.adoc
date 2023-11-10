@@ -15,6 +15,7 @@ Der VR Escape Room ist eine Diplomarbeit aus dem Jahr 2023, die von uns verbesse
 #### Räume
 
 Kinderzimmer 
+image::pictures/childrensRoom.jpg [Childrens Room]
 
 Bibliothek
 

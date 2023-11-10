@@ -15,6 +15,7 @@ export class ChatComponent implements OnInit, OnDestroy {
   public lobbyId: string | null;
   public messages: MessageDisplay[] | null;
   public message: string | null;
+  public users: string | null;
 
   private page: number = 0;
   diary: any = diaryData[this.page];
@@ -27,6 +28,7 @@ export class ChatComponent implements OnInit, OnDestroy {
     this.lobbyId = null;
     this.messages = null;
     this.message = null;
+    this.users = null;
   }
 
   nextPage() {
@@ -56,6 +58,7 @@ export class ChatComponent implements OnInit, OnDestroy {
     this.userName = this.userService.user;
     this.lobbyId = this.userService.lobby;
     console.log(this.lobbyId, this.userName);
+    console.log(this.users);
     this.startChat();
   }
 
@@ -85,7 +88,12 @@ export class ChatComponent implements OnInit, OnDestroy {
     this.sendMsg(`${this.userName} joined the Party!`);
   }
 
-
+  /*private getAllUsers (): void {
+    this.chatService.GetAllUsersFromLobby(this.lobbyId!)
+      .subscribe(users => {
+        this.users = users;
+      });
+  }*/
   /* Diary sollte ein Fenster öffnen oder in chat componente drinnen sein
   diary() {
     this.router.navigate(['/diary']);
