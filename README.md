@@ -1,6 +1,7 @@
 # Schrödingers Haus
 
 Ein Virtual Reality Escape Room mit Website Multiplayer-Funktion. Der VR Spieler soll ein spannendes Spielerlebnis haben, bei welchem den Zuschauern die Möglichkeit angeboten wird, diesen auf ihren Smartphones zu unterstützen
+
 <img src="pictures/logo.png" alt="Logo" style="width: 300px; height: auto;">
 
 
