@@ -132,7 +132,7 @@ Unser Ziel ist es, ein Escape Room VR-Spiel zu entwickeln, welches die HTL Leond
 
 ## 6. Sprints
 
-<a href="https://www.example.com">alle sprints</a>
+<a href="https://github.com/orgs/SYP-AHIF-2023-24-25/projects/5/views/4">alle sprints</a>
 
 ### Sprint 1
 * UML-Diagramm erstellen
