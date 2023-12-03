@@ -139,5 +139,5 @@ Unser Ziel ist es, ein Escape Room VR-Spiel zu entwickeln, welches die HTL Leond
 * Spielablauf definieren 
 * Projekt auf Ora-VM hosten 
 * Rest-API für den Spielstand 
-* Trigger ans MT-Backend
+* Trigger ans MDT-Api
 
