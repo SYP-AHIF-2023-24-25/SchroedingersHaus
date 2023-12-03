@@ -31,17 +31,42 @@ die erfolgreich abgeschlossen werden müssen um das Spielende zu erreichen.
 
 #### Räume
 
-Kinderzimmer 
+#### Kinderzimmer 
 <img src="pictures/childrensRoom.jpg" alt="Childrens Room">
 
-Bibliothek
+1. Wurfobjekt muss unter dem Bett gefunden werden und in den Basketballkorb geworfen werden, sodass ein Papierflieger aus dem Korb fällt
+2. Im Papierkorb liegt eine DVD die man in den alten Röhrenfersehen schieben muss 
+3. Es erscheint eine Werbung von einem Teddy mit einen Reißverschluss hinten, aus dem man einen Schlüssel nehmen kann 
+4. Der Schlüssel öffnet eine Schatztruhe in der eine Mathe Aufgabe enthalten ist 
+5. Die Lösung kann als Code für eine Lade verwendet werden 
+6. In der Lade befindet sich ein Hammer, mit dem man das Fenster durchbrechen kann (Ausgang: Durch das Fenster)
+
+#### Bibliothek
 <img src="pictures/library.jpg" alt="Childrens Room">
 
-Labor 
+1. Notiz muss auf dem Tisch entdeckt werden, auf der steht was bereits am Atelier zu sehen ist und 1 Sache die noch gemalt werden muss
+2. Fehlende Sache wird auf das Papier gemalt und dies fällt dann herunter und deckt eine Statue auf 
+3. Statue schaut in die Richtung einer Säule und in der Nähe dieser Säule findet man ein bestimmtes Buch 
+4. Nach Entnahme des Buches öffnet sich die Türe
+
+#### Labor 
 <img src="pictures/laboratory.jpg" alt="Childrens Room">
+
+1. Ein Alarm ertönt ("Raum ist kontaminiert") und man müss die Notfallanweisungen durchlesen 
+2. Lüftung im Boden muss abgedeckt werden, dass der Alarm aufhört 
+3. Es ertönt eine Durchsage mit den Zutanten für ein Gegenmittel
+4. Die beschrifteten Gläsern müssen zusammengesucht, gemischt und getrunken werden, dass der Alarm aus geht 
+5. Es müssen Zahlen am Tisch gefunden werden die als Code für die Tür verwendet werden können
+
 
 Kerker 
 <img src="pictures/dungeon.jpg" alt="Childrens Room">
+
+1. Eine Schriftrolle muss im Bücherregal gefunden werden, in der eine Anleitung für ein Schwert enthalten ist 
+2. Ein Hammer muss im Fass gefunden werden und eine Metallstange in einer Truhe 
+3. Ein Feuerholz muss in den Ofen gelegt werden, sodass eine Stange beginnt zu glühen 
+4. Auf dem Amboss muss aus dem glühenden Stab und dem Hammer ein Schwert gemacht werden 
+5. Mit dem Schwert können dann die Ketten an der Tür zerschlagen werden 
 
 ### 1.2 Verbesserungspotential 
 
