@@ -82,44 +82,7 @@ Kerker
 * Chat 
 * Spielstand
 
-## 2. Zielsetzung 
-
-### 2.1 Soll-Zustand
-
-Unser Ziel ist es, ein Escape Room VR-Spiel zu entwickeln, welches die HTL Leonding vorzeigen kann, wenn sie die Oculus Quest 2 oder Oculus Rift bei Events ausstellt. 
-
-## 3. Risikoanalyse 
-
-### 3.1 Chancen 
-* Neue Technologien kennenlernen 
-* Zweigübergreifende Zusammenarbeit 
-
-### 3.2 Projektrisiken 
-
-* Komplikationen, da wir noch nie mit VR gearbeitet haben 
-* hoher Zeitaufwand sich in das Projekt einzufinden 
-
-## 4. Projektablauf 
-
-### 4.1 Umgebung
-* Visual Studio 
-* IntelliJ
-* Unity
-* Cinema 4D
-
-### 4.2 Meilensteine 
-
-#### Wintersemester
-* Anwendung Testen und weitere Fehler suchen 
-* Aufgabenzuweisung 
-* Fehler beheben 
-* neues Web-Design 
-
-#### Sommersemester
-* alle Fehler beheben 
-* neue Features hinzufügen 
-
-## User Stories
+## 2. User Stories
 
 ### Vr-Spieler:
 
@@ -142,3 +105,39 @@ Unser Ziel ist es, ein Escape Room VR-Spiel zu entwickeln, welches die HTL Leond
 * Die User können mit ihren Mitspielern und dem VR-Spieler über den Chat kommunizieren 
 * Die User können durch eine vorgegebene Geschichte, die zu den jeweiligen Räumen gehört, durchblättern
 * Die User müssen im laufe der Geschichte verschiedene Rätsel und Mini-Games lösen um dem VR-Spieler zu helfen
+
+## 3. Zielsetzung 
+
+### 3.1 Soll-Zustand
+
+Unser Ziel ist es, ein Escape Room VR-Spiel zu entwickeln, welches die HTL Leonding vorzeigen kann, wenn sie die Oculus Quest 2 oder Oculus Rift bei Events ausstellt. 
+
+## 4. Risikoanalyse 
+
+### 4.1 Chancen 
+* Neue Technologien kennenlernen 
+* Zweigübergreifende Zusammenarbeit 
+
+### 4.2 Projektrisiken 
+
+* Komplikationen, da wir noch nie mit VR gearbeitet haben 
+* hoher Zeitaufwand sich in das Projekt einzufinden 
+
+## 5. Umgebung 
+
+* Visual Studio 
+* IntelliJ
+* Unity
+* Cinema 4D
+
+## 6. Sprints
+
+<a href="https://www.example.com">alle sprints</a>
+
+### Sprint 1
+* UML-Diagramm erstellen
+* Spielablauf definieren 
+* Projekt auf Ora-VM hosten 
+* Rest-API für den Spielstand 
+* Trigger ans MT-Backend
+
