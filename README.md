@@ -29,6 +29,9 @@ Fertigstellen eines Raumes zu ermöglichen. Die Ergebnisse eines Rätsels müsse
 um dem Hauptspieler angezeigt zu werden und diesem zu Helfen. Es gibt vier Räume (Kinderzimmer, Bibliothek, Labor, Keller), 
 die erfolgreich abgeschlossen werden müssen um das Spielende zu erreichen.
 
+#### Ablaufdiagram
+<img src="pictures/UML.png" alt="UML Diagram">
+
 #### Räume
 
 #### Kinderzimmer 
