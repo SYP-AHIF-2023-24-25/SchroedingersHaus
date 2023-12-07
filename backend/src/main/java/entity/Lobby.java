@@ -1,19 +1,38 @@
 package entity;
 
-import javax.websocket.Session;
-import java.util.*;
+import jakarta.persistence.*;
+import jakarta.websocket.Session;
+import lombok.*;
+
+import jakarta.enterprise.context.ApplicationScoped;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+@Getter
+@Setter
+@Builder
+@ApplicationScoped
+@NoArgsConstructor
+@AllArgsConstructor
+
+@Entity
+@Table(name = "lobbies")
 public class Lobby {
-    String lobbyId;
+    @Id
+    @Column(name = "lobby_id")
+    private String lobbyId;
 
-    //Map von Username + Session
-    private final Map<String, Session> sessions = new ConcurrentHashMap<>();
+    @Transient
+    private Map<String, Session> sessions = new ConcurrentHashMap<>();
 
-    //Set von den Usernames (für Abfragen)
-    private final Set<String> users = new HashSet<>();
+    @ElementCollection
+    @CollectionTable(name = "lobby_users", joinColumns = @JoinColumn(name = "lobby_id"))
+    @Column(name = "user_name")
+    private Set<String> users = new HashSet<>();
 
-    //aktuellstes Rätse
+    @Column(name = "current_state")
     private String state = "0";
 
     public Lobby(String lobbyId) {
@@ -39,19 +58,7 @@ public class Lobby {
         return true;
     }
 
-    public String getState() {
-        return state;
-    }
-
     public Set<String> getUserNames(){
         return users;
-    }
-
-    public String getLobbyId() {
-        return lobbyId;
-    }
-
-    public Map<String, Session> getSessions() {
-        return sessions;
     }
 }

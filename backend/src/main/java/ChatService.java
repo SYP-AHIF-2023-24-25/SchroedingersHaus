@@ -1,16 +1,21 @@
 import entity.Lobby;
 import helper.ProfanityFilter;
 import helper.RandomStringGenerate;
+import jakarta.enterprise.inject.Model;
+import jakarta.inject.Inject;
+import jakarta.websocket.Session;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.websocket.Session;
-import java.util.*;
-import java.util.stream.Collectors;
+import jakarta.enterprise.context.ApplicationScoped;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 @ApplicationScoped
+@Model
 public class ChatService {
 
-    private ProfanityFilter filter = new ProfanityFilter();
+    @Inject
+    ProfanityFilter filter;
 
     //Set von den allen Lobbies
     private Set<Lobby> lobbies = new HashSet<>();
