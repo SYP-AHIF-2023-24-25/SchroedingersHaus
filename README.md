@@ -37,39 +37,97 @@ die erfolgreich abgeschlossen werden müssen um das Spielende zu erreichen.
 #### Kinderzimmer 
 <img src="pictures/childrensRoom.jpg" alt="Childrens Room">
 
-1. Wurfobjekt muss unter dem Bett gefunden werden und in den Basketballkorb geworfen werden, sodass ein Papierflieger aus dem Korb fällt
-2. Im Papierkorb liegt eine DVD die man in den alten Röhrenfersehen schieben muss 
-3. Es erscheint eine Werbung von einem Teddy mit einen Reißverschluss hinten, aus dem man einen Schlüssel nehmen kann 
-4. Der Schlüssel öffnet eine Schatztruhe in der eine Mathe Aufgabe enthalten ist 
-5. Die Lösung kann als Code für eine Lade verwendet werden 
+1. Wurfobjekt muss unter dem Bett gefunden werden und in den Basketballkorb geworfen werden
+
+    Hint: Wirf den Basketball unterm Bett in den 	Basketballkorb
+
+2. Ein Papierflieger fällt aus dem Basketballkorb in den Papierkorb
+
+    Hint: Schau in den Papierkorb
+
+3. Im Papierkorb liegt eine DVD die man in den alten Röhrenfersehen schieben muss 
+
+    Hint: Schieb die DVD aus dem Papierkorb in den Fernseher
+    
+4. Es erscheint eine Werbung von einem Teddy mit einen Reißverschluss hinten, aus dem man einen Schlüssel nehmen kann 
+
+    Hint: Suche den Teddy der Werbung und öffne seinen Reißverschluss
+
+5. Der Schlüssel öffnet eine Schatztruhe in der eine Mathe Aufgabe enthalten ist 
+
+    Hint: x = 1445
+
+6. Die Lösung kann als Code für eine Lade verwendet werden 
+
+    Hint: Suche die richtige Schublade und öffne sie mit der Lösung der Mathe-Aufgabe
+
 6. In der Lade befindet sich ein Hammer, mit dem man das Fenster durchbrechen kann (Ausgang: Durch das Fenster)
+
+    Hint: Brich mit dem Hammer in der Lade das Fenster auf
 
 #### Bibliothek
 <img src="pictures/library.jpg" alt="Childrens Room">
 
-1. Notiz muss auf dem Tisch entdeckt werden, auf der steht was bereits am Atelier zu sehen ist und 1 Sache die noch gemalt werden muss
+1. Notiz muss auf dem Tisch entdeckt werden, auf der steht was bereits auf der Staffel zu sehen ist und 1 Sache die noch gemalt werden muss
+
+    Hint: Suche die Notiz auf dem Tisch und finde heraus welches Tier auf der Notiz steht aber nicht auf der Staffel zu sehen ist
+	
 2. Fehlende Sache wird auf das Papier gemalt und dies fällt dann herunter und deckt eine Statue auf 
-3. Statue schaut in die Richtung einer Säule und in der Nähe dieser Säule findet man ein bestimmtes Buch 
+
+    Hint: Male das fehlende Tier mit dem Pinsel auf die Staffel
+
+3. Statue dreht sich und schaut in die Richtung einer Säule und in der Nähe dieser Säule findet man ein bestimmtes Buch 
+
+    Hint: Die Statue im Raum schaut auf eine Säule. Suche das richtige Buch im Regal daneben
+
 4. Nach Entnahme des Buches öffnet sich die Türe
 
 #### Labor 
 <img src="pictures/laboratory.jpg" alt="Childrens Room">
 
 1. Ein Alarm ertönt ("Raum ist kontaminiert") und man müss die Notfallanweisungen durchlesen 
+
+	Hint: Finde die Notfallanweisungen und lese sie durch
+
 2. Lüftung im Boden muss abgedeckt werden, dass der Alarm aufhört 
-3. Es ertönt eine Durchsage mit den Zutanten für ein Gegenmittel
+
+	Hint: Folge den Notfallanweisungen und decke die Lüftung im Boden ab
+
+3. Es ertönt eine Durchsage mit den Zutanten für ein Gegenmittel 
+
+	Hint: Höre dir die Durchsage an und finde heraus welche Zutaten du benötigst um ein Gegenmittel herzustellen
+
 4. Die beschrifteten Gläsern müssen zusammengesucht, gemischt und getrunken werden, dass der Alarm aus geht 
-5. Es müssen Zahlen am Tisch gefunden werden die als Code für die Tür verwendet werden können
+
+	Hint: Mische die richtigen Zutaten zusammen und trinke die Mischung 
+
+5. Es müssen Zahlen am Tisch gefunden werden die als Code für die Tür verwendet werden können 
+
+	Hint: Finde die Zahlen am Tisch die als Code für die Türe verwendet werden können
 
 
 Kerker 
 <img src="pictures/dungeon.jpg" alt="Childrens Room">
 
 1. Eine Schriftrolle muss im Bücherregal gefunden werden, in der eine Anleitung für ein Schwert enthalten ist 
-2. Ein Hammer muss im Fass gefunden werden und eine Metallstange in einer Truhe 
+
+	Hint: Suche die Schriftrolle im Bücherregel
+
+2. Ein Hammer muss im Fass gefunden werden und eine Metallstange in einer Truhe
+ 
+	Hint:Im Fass befindet sich ein Hammer und in der Truhe eine Metallstange die zur herstellung des Schwertes benötigt werden
+
 3. Ein Feuerholz muss in den Ofen gelegt werden, sodass eine Stange beginnt zu glühen 
+
+	Hint: Lege ein Feuerholz in den Ofen und bring die Stange zum Glühen
+
 4. Auf dem Amboss muss aus dem glühenden Stab und dem Hammer ein Schwert gemacht werden 
+
+	Hint: Stelle mithilfe des glühenden Stabs und dem Hammer auf dem Amboss das Schwert her
+
 5. Mit dem Schwert können dann die Ketten an der Tür zerschlagen werden 
+
+	Hint: Zerschlage mit dem Schwert die Ketten an der Tür
 
 ### 1.2 Verbesserungspotential 
 
@@ -143,4 +201,15 @@ Unser Ziel ist es, ein Escape Room VR-Spiel zu entwickeln, welches die HTL Leond
 * Projekt auf Ora-VM hosten 
 * Rest-API für den Spielstand 
 * Trigger ans MDT-Api
+
+### Sprint 2
+* Sequenz Diagramm erstellen 
+* Hints zu Challanges hinzufügen 
+* MDT anbinden
+* Datenbank verbessern 
+
+### Sprint Tag der offenen Tür 
+* Canvas in Kindersimmer hinzufügen 
+* Bilderkennungs KI auf Canvas hinzüfügen
+* Neue Chatgeschichte schreiben + neues Minispiel
 
