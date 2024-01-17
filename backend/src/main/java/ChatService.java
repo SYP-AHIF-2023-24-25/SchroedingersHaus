@@ -1,21 +1,16 @@
 import entity.Lobby;
 import helper.ProfanityFilter;
 import helper.RandomStringGenerate;
-import jakarta.enterprise.inject.Model;
-import jakarta.inject.Inject;
-import jakarta.websocket.Session;
 
-import jakarta.enterprise.context.ApplicationScoped;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import javax.enterprise.context.ApplicationScoped;
+import javax.websocket.Session;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @ApplicationScoped
-@Model
 public class ChatService {
 
-    @Inject
-    ProfanityFilter filter;
+    private ProfanityFilter filter = new ProfanityFilter();
 
     //Set von den allen Lobbies
     private Set<Lobby> lobbies = new HashSet<>();
@@ -56,7 +51,7 @@ public class ChatService {
     public Set<String> GetAllUsersFromLobby(String lobbyId){
       return lobbies.stream().filter(lobby -> lobby.getLobbyId().equals(lobbyId))
               .toList().get(0).getUserNames();
-    }
+    }q
 
     public Set<String> GetAllLobbyIds() {
         return lobbyIds;

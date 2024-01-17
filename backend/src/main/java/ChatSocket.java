@@ -1,9 +1,8 @@
-import jakarta.inject.Inject;
-import jakarta.websocket.*;
-import jakarta.websocket.server.PathParam;
-import jakarta.websocket.server.ServerEndpoint;
-
-import jakarta.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
+import javax.websocket.*;
+import javax.websocket.server.PathParam;
+import javax.websocket.server.ServerEndpoint;
 
 
 @ApplicationScoped
@@ -11,7 +10,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 public final class ChatSocket {
 
     @Inject
-    ChatService chatService;
+    private ChatService chatService;
 
 
     @OnOpen

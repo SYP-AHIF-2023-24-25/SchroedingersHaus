@@ -21,7 +21,7 @@
 # docker run -i --rm -p 8080:8080 quarkus/backend-jvm
 #
 ###
-FROM registry.access.redhat.com/ubi8/openjdk-17-runtime:latest
+FROM registry.access.redhat.com/ubi8/openjdk-11-runtime:1.10
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en'
 
@@ -33,14 +33,9 @@ COPY --chown=185 target/quarkus-app/lib/ /deployments/lib/
 COPY --chown=185 target/quarkus-app/*.jar /deployments/
 COPY --chown=185 target/quarkus-app/app/ /deployments/app/
 COPY --chown=185 target/quarkus-app/quarkus/ /deployments/quarkus/
-COPY --chown=185 .env .env
-COPY --chown=185 .env /deployments/.env
-COPY --chown=185 .env /deployments/app/.env
-COPY --chown=185 .env /deployments/quarkus/.env
-COPY --chown=185 .env /deployments/lib/.env
 
 EXPOSE 8080
 USER 185
 
-WORKDIR /deployments
 ENTRYPOINT [ "java", "-jar", "/deployments/quarkus-run.jar" ]
+

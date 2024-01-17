@@ -1,11 +1,9 @@
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
-import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
-
+import javax.inject.Inject;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.util.Set;
 import java.util.stream.Stream;
-@ApplicationScoped
 
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -13,7 +11,7 @@ import java.util.stream.Stream;
 public class UserResource {
 
     @Inject
-    ChatService chatService;
+    private ChatService chatService;
 
 
     //für unity user todo?

@@ -1,38 +1,20 @@
-import entity.GameState;
-import entity.Lobby;
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
-import jakarta.persistence.EntityManager;
-import jakarta.transaction.Transactional;
-import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
-import repository.GameStateRepository;
-import repository.LobbyRepository;
+import javax.inject.Inject;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.time.LocalDateTime;
+import java.util.stream.Stream;
 
-import java.util.Collection;
-
-
+@Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 
 @Path("lobby")
-@ApplicationScoped
 public class LobbyResource {
     @Inject
-    ChatService chatService;
-
-    @Inject
-    EntityManager entityManager;
-
-    @Inject
-    GameStateRepository gameStateRepository;
-
-    @Inject
-    LobbyRepository lobbyRepository;
+    private ChatService chatService;
 
     //für unity und testing only, Unity erstellt eine Lobby
     @POST
-    @Transactional
     public Response createLobby() throws InterruptedException {
         var lobbyId = chatService.GenerateLobbyId();
 
@@ -43,42 +25,8 @@ public class LobbyResource {
             createLobby();
         }
 
-        // Erstelle eine neue Lobby-Entität
-        Lobby lobby = new Lobby(lobbyId);
-
-        try {
-            // Persistiere die Lobby in der Datenbank
-            entityManager.persist(lobby);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
         System.out.println("Neue Lobby erstellt");
         return Response.ok(new LoginResult(lobbyId, true)).build();
-    }
-
-    @POST
-    @Transactional
-    public Response saveGameState(String lobbieId, String currentRoom, String currenChallenge) throws InterruptedException {
-
-        if(!chatService.GetAllLobbyIds().stream().findAny().equals(lobbieId)){
-            System.out.println("Übergebene LobbyId existiert nicht. Kein Gamestate speichern möglich");
-        }
-        GameState gameState = new GameState();
-
-        try {
-            // Persistiere die Lobby in der Datenbank
-            gameState = entityManager.find(GameState.class, lobbieId);
-            gameState.setCurrentRoom(currentRoom);
-            gameState.setCurrentChallenge(currenChallenge);
-
-            entityManager.persist(gameState);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        System.out.println("GameState für Lobby " + lobbieId + " gespeichert");
-        return Response.ok(gameState).build();
     }
 
 
@@ -108,8 +56,8 @@ public class LobbyResource {
     //fürs testen
     @GET
     @Path("getAllLobbies")
-    public Collection<Lobby> getAllLobbies(){
-        return lobbyRepository.findAll();
+    public Stream<String> getAllLobbies(){
+        return chatService.GetAllLobbyIds().stream();
     }
 
     record LoginResult(String lobby, boolean success){}

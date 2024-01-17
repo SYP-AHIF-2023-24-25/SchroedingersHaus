@@ -1,32 +1,27 @@
 package helper;
 
-import jakarta.enterprise.inject.Model;
-
-import jakarta.enterprise.context.ApplicationScoped;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+
 //Quelle: https://gist.github.com/PimDeWitte/c04cc17bc5fa9d7e3aee6670d4105941
-@ApplicationScoped
-@Model
 public class ProfanityFilter {
 
     static Map<String, String[]> words = new HashMap<>();
 
     static int largestWordLength = 0;
 
-    public ProfanityFilter() {
+
+
+    public static void ProfanityFilter() {
         loadConfigs();
     }
-
-    /*public static void ProfanityFilter() {
-
-    }*/
 
     public static void loadConfigs() {
         try {
