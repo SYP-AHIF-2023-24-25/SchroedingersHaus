@@ -1,16 +1,19 @@
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-import javax.websocket.*;
-import javax.websocket.server.PathParam;
-import javax.websocket.server.ServerEndpoint;
+import jakarta.enterprise.inject.Model;
+import jakarta.inject.Inject;
+import jakarta.websocket.*;
+import jakarta.websocket.server.PathParam;
+import jakarta.websocket.server.ServerEndpoint;
+
+import jakarta.enterprise.context.ApplicationScoped;
 
 
 @ApplicationScoped
+@Model
 @ServerEndpoint("/chat/{lobbyId}/{username}")
 public final class ChatSocket {
 
     @Inject
-    private ChatService chatService;
+    ChatService chatService;
 
 
     @OnOpen
