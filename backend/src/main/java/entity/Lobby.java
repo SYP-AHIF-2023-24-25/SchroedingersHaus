@@ -32,8 +32,6 @@ public class Lobby {
     @Column(name = "user_name")
     private Set<String> users = new HashSet<>();
 
-    @Column(name = "current_state")
-    private String state = "0";
 
     public Lobby(String lobbyId) {
         this.lobbyId = lobbyId;
@@ -50,12 +48,6 @@ public class Lobby {
     public void RemoveSession(String userName){
         sessions.remove(userName);
         users.remove(userName);
-    }
-
-    public boolean setState(String newState){
-        //todo: abfrage ob state größer ist als alter state
-        this.state = newState;
-        return true;
     }
 
     public Set<String> getUserNames(){

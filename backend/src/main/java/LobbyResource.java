@@ -1,5 +1,6 @@
 import entity.GameState;
 import entity.Lobby;
+import entity.RoomChallenge;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
@@ -59,18 +60,19 @@ public class LobbyResource {
 
     @POST
     @Transactional
-    public Response saveGameState(String lobbieId, String currentRoom, String currenChallenge) throws InterruptedException {
+    public Response saveGameState(String lobbieId, int currentRoom, int currenChallenge) throws InterruptedException {
 
         if(!chatService.GetAllLobbyIds().stream().findAny().equals(lobbieId)){
             System.out.println("Übergebene LobbyId existiert nicht. Kein Gamestate speichern möglich");
         }
         GameState gameState = new GameState();
+        Lobby lobby = new Lobby();
 
         try {
             // Persistiere die Lobby in der Datenbank
             gameState = entityManager.find(GameState.class, lobbieId);
-            gameState.setCurrentRoom(currentRoom);
-            gameState.setCurrentChallenge(currenChallenge);
+            RoomChallenge roomChallenge = new RoomChallenge(currentRoom, currenChallenge);
+            gameState.setCurrentRoomChallenge(roomChallenge);
 
             entityManager.persist(gameState);
         } catch (Exception e) {

@@ -24,4 +24,9 @@ public class LobbyRepository {
     public Lobby findById(final String id) {
         return entityManager.find(Lobby.class, id);
     }
+
+    @Transactional
+    public void saveLobby(Lobby lobby) {
+        entityManager.persist(lobby);
+    }
 }

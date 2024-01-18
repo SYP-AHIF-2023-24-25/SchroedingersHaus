@@ -1,3 +1,4 @@
+import jakarta.enterprise.inject.Model;
 import jakarta.inject.Inject;
 import jakarta.websocket.*;
 import jakarta.websocket.server.PathParam;
@@ -7,6 +8,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 
 
 @ApplicationScoped
+@Model
 @ServerEndpoint("/chat/{lobbyId}/{username}")
 public final class ChatSocket {
 
