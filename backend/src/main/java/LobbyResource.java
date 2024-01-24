@@ -1,4 +1,5 @@
 import entity.GameState;
+import entity.Hint;
 import entity.Lobby;
 import entity.RoomChallenge;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -9,6 +10,7 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import repository.GameStateRepository;
+import repository.HintRepository;
 import repository.LobbyRepository;
 
 import java.util.Collection;
@@ -27,6 +29,9 @@ public class LobbyResource {
 
     @Inject
     GameStateRepository gameStateRepository;
+
+    @Inject
+    HintRepository hintRepository;
 
     @Inject
     LobbyRepository lobbyRepository;
@@ -113,6 +118,14 @@ public class LobbyResource {
     public Collection<Lobby> getAllLobbies(){
         return lobbyRepository.findAll();
     }
+
+    @GET
+    @Path("getAllHints")
+    public Collection<Hint> getAllHints(){
+        return hintRepository.getAllHints();
+    }
+
+
 
     record LoginResult(String lobby, boolean success){}
 

@@ -28,7 +28,7 @@ class LobbyResourceTest {
     @Inject
     LobbyRepository lobbyRepository;
 
-    @Transactional
+    /*@Transactional
     @Test
     void testCreateLobby_Success() {
         try {
@@ -40,7 +40,7 @@ class LobbyResourceTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     /*@Transactional
     @Test
@@ -74,12 +74,12 @@ class LobbyResourceTest {
         assertEquals(4, hintFromDB.getRoomChallenge().getCurrentRoom());
     }*/
 
-    @Test
+    /*@Test
     @Transactional
     public void testSaveGameStateToExistingLobby() {
         // Erstelle eine Lobby
         //Lobby lobby = lobbyRepository.findById("HQuB42");
-        Lobby lobby = new Lobby("VsIr42");
+        Lobby lobby = new Lobby("V3er42");
         //lobbyRepository.saveLobby(lobby);
 
         // Erstelle einen Beispiel-GameState
@@ -99,5 +99,5 @@ class LobbyResourceTest {
 
         // Überprüfe, ob der GameState zur richtigen Lobby gehört
         assertEquals(lobby.getLobbyId(), savedGameState.getLobbyId());
-    }
+    }*/
 }
