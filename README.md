@@ -30,7 +30,15 @@ um dem Hauptspieler angezeigt zu werden und diesem zu Helfen. Es gibt vier Räum
 die erfolgreich abgeschlossen werden müssen um das Spielende zu erreichen.
 
 #### Ablaufdiagram
-<img src="pictures/UML.png" alt="UML Diagram">
+<img src="pictures/VRSpieler.jpg" alt="VR-Speiler Diagram">
+<img src="pictures/Mitspieler.jpg" alt="Mitspieler Diagram">
+
+#### Sequenzdiagramme
+<img src="pictures/NeueLobby.jpg" alt="Neue Lobby Sequenzdiagram">
+<img src="pictures/ExistierendeLobby.jpg" alt="Existierende Lobby Sequenzdiagram">
+<img src="pictures/LoginMitspieler.jpg" alt="Login Mitspieler Sequenzdiagram">
+<img src="pictures/Raum.jpg" alt="Raum Sequenzdiagram">
+<img src="pictures/Help.jpg" alt="Help Trigger Sequenzdiagram">
 
 #### Räume
 
