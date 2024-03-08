@@ -9,6 +9,9 @@
 
 # dependencies
 /node_modules
+/.pnp
+.pnp.js
+
 
 # profiling files
 chrome-profiler-events*.json
@@ -29,6 +32,13 @@ chrome-profiler-events*.json
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+/.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw??
+
 
 # misc
 /.angular/cache
@@ -40,7 +50,24 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+/debug.log
+/ipc.log
+/lerna-debug.log*
+/yarn-error.log*
+/npm-debug.log*
+/npx-debug.log*
+/*.pem
+/*.pid
+/*.log
+/*.seed
+/*.pid.lock
+/*.log.*
+.npm
+.pids
+*.pid.lock
 
 # System Files
 .DS_Store
 Thumbs.db
+
+

@@ -51,7 +51,7 @@ public class ChatService {
     public Set<String> GetAllUsersFromLobby(String lobbyId){
       return lobbies.stream().filter(lobby -> lobby.getLobbyId().equals(lobbyId))
               .toList().get(0).getUserNames();
-    }q
+    }
 
     public Set<String> GetAllLobbyIds() {
         return lobbyIds;
