@@ -1,6 +1,7 @@
+import entity.Challenge;
+import entity.Diary;
 import entity.GameState;
 import entity.Lobby;
-import entity.RoomChallenge;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
@@ -8,6 +9,8 @@ import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import repository.ChallengeRepository;
+import repository.DiaryRepository;
 import repository.GameStateRepository;
 import repository.LobbyRepository;
 
@@ -31,6 +34,12 @@ public class LobbyResource {
     @Inject
     LobbyRepository lobbyRepository;
 
+    @Inject
+    ChallengeRepository challengeRepository;
+
+    @Inject
+    DiaryRepository diaryRepository;
+
     //für unity und testing only, Unity erstellt eine Lobby
     @POST
     @Transactional
@@ -49,40 +58,51 @@ public class LobbyResource {
 
         try {
             // Persistiere die Lobby in der Datenbank
-            entityManager.persist(lobby);
+            lobbyRepository.saveLobby(lobby);
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //saveGameState(lobbyId, 1, 1);
 
         System.out.println("Neue Lobby erstellt");
         return Response.ok(new LoginResult(lobbyId, true)).build();
     }
 
     @POST
+    @Path("/{lobbyId}/gameState")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Transactional
-    public Response saveGameState(String lobbieId, int currentRoom, int currenChallenge) throws InterruptedException {
+    public Response saveGameState(@PathParam("lobbyId") String lobbyId, GameState gameState) throws InterruptedException {
 
-        if(!chatService.GetAllLobbyIds().stream().findAny().equals(lobbieId)){
+        if(!lobbyRepository.findAll().stream().findAny().equals(lobbyId)){
             System.out.println("Übergebene LobbyId existiert nicht. Kein Gamestate speichern möglich");
         }
-        GameState gameState = new GameState();
-        Lobby lobby = new Lobby();
+        var newGameState = new GameState();
+        newGameState.setCurrentLobbyId(lobbyId);
+        newGameState.setCurrentRoomId(gameState.getCurrentRoomId());
+        newGameState.setCurrentChallengeId(gameState.getCurrentChallengeId());
 
         try {
             // Persistiere die Lobby in der Datenbank
-            gameState = entityManager.find(GameState.class, lobbieId);
-            RoomChallenge roomChallenge = new RoomChallenge(currentRoom, currenChallenge);
-            gameState.setCurrentRoomChallenge(roomChallenge);
-
-            entityManager.persist(gameState);
+            gameStateRepository.saveGameState(newGameState);
         } catch (Exception e) {
             e.printStackTrace();
-        }
 
-        System.out.println("GameState für Lobby " + lobbieId + " gespeichert");
-        return Response.ok(gameState).build();
+        }
+        System.out.println("GameState für Lobby " + lobbyId + " gespeichert");
+        return Response.ok(newGameState).build();
     }
 
+    @GET
+    @Path("/{lobbyId}/gameState")
+    @Transactional
+    public Response getGameState(@PathParam("lobbyId") String lobbyId) throws InterruptedException {
+        var gameState = gameStateRepository.findById(lobbyId);
+        if (gameState == null) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+        return Response.ok(gameState).build();
+    }
 
     @GET
     @Path("/reloadProfanityFilter")
@@ -99,7 +119,13 @@ public class LobbyResource {
     @Path("/{lobbyId}")
     public Response requestLobby(@PathParam("lobbyId") String lobbyId) throws InterruptedException {
         System.out.println(lobbyId);
+        /*
         if (chatService.GetAllLobbyIds().contains(lobbyId)){
+            System.out.println("Lobby existiert");
+            return Response.ok(new LoginResult(lobbyId, true)).build();
+        }
+        System.out.println("Lobby existiert nicht");*/
+        if (lobbyRepository.findById(lobbyId) != null) {
             System.out.println("Lobby existiert");
             return Response.ok(new LoginResult(lobbyId, true)).build();
         }
@@ -113,6 +139,54 @@ public class LobbyResource {
     public Collection<Lobby> getAllLobbies(){
         return lobbyRepository.findAll();
     }
+
+    @POST
+    @Path("/challenge")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Transactional
+    public Response saveChallenge(Challenge challenge) {
+        Challenge newChallenge = new Challenge();
+        newChallenge.setName(challenge.getName());
+        newChallenge.setDescription(challenge.getDescription());
+        newChallenge.setHint(challenge.getHint());
+
+        try {
+            challengeRepository.saveChallenge(newChallenge);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(newChallenge.getName() + " challenge created");
+        return Response.ok(newChallenge).build();
+    }
+
+    @POST
+    @Path("/diary")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Transactional
+    public Response saveDiary(Diary diary) {
+
+        Diary newDiary = new Diary();
+        newDiary.setChallengeId(diary.getChallengeId());
+        newDiary.setChapter(diary.getChapter());
+        newDiary.setEntry(diary.getEntry());
+
+        try {
+            diaryRepository.saveDiary(newDiary);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Diary Entry" + newDiary.getChapter() + " created");
+        return Response.ok().build();
+    }
+
+    @GET
+    @Path("/diary")
+    @Transactional
+    public Collection<Diary> getAllDiaries(){
+        return diaryRepository.findAll();
+    }
+
 
     record LoginResult(String lobby, boolean success){}
 

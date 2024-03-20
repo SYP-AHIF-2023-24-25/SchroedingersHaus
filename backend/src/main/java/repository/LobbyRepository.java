@@ -26,7 +26,8 @@ public class LobbyRepository {
     }
 
     @Transactional
-    public void saveLobby(Lobby lobby) {
+    public Lobby saveLobby(Lobby lobby) {
         entityManager.persist(lobby);
+        return lobby;
     }
 }

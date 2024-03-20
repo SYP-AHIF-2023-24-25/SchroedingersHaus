@@ -50,19 +50,19 @@ public final class ChatSocket {
                           @PathParam("lobbyId") String lobbyId) {
 
         /*
-        * JSONObject jo = new JSONObject();
-        * jo.put("type", "chat");
-        * jo.put("text", message); either
-        * jo.put("state", null); or
-        *
-        * jo.put("type", "puzzle");
-        * jo.put("text", null); either
-        * jo.put("state", message); or
-        *
-        * if(jo.getString("type") == "chat") {
-        * }
-        *
-        * */
+         * JSONObject jo = new JSONObject();
+         * jo.put("type", "chat");
+         * jo.put("text", message); either
+         * jo.put("state", null); or
+         *
+         * jo.put("type", "puzzle");
+         * jo.put("text", null); either
+         * jo.put("state", message); or
+         *
+         * if(jo.getString("type") == "chat") {
+         * }
+         *
+         * */
         if (message.equalsIgnoreCase("_ready_")) {
             broadcast("User " + username + " joined", lobbyId);
         }

@@ -1,15 +1,16 @@
 package helper;
 
+import jakarta.enterprise.context.ApplicationScoped;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-
+@ApplicationScoped
 //Quelle: https://gist.github.com/PimDeWitte/c04cc17bc5fa9d7e3aee6670d4105941
 public class ProfanityFilter {
 

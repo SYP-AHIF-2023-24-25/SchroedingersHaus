@@ -1,9 +1,8 @@
 package entity;
-import jakarta.persistence.*;
-import lombok.*;
 
 import jakarta.enterprise.context.ApplicationScoped;
-import java.util.Map;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Getter
 @Setter
@@ -12,22 +11,20 @@ import java.util.Map;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "lobbies")
-public class GameState extends Lobby{
+@Table(name = "gameState")
+public class GameState {
 
-    /*@Column(name = "current_room")
-    private String currentRoom;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "gamestate_id")
+    private int gameStateId;
 
-    @Column(name = "current_challenge")
-    private String currentChallenge;*/
+    @Column(name = "current_lobby_id")
+    private String currentLobbyId;
 
-    @Column(name = "current_room_challenge", columnDefinition = "VARCHAR(255)")
-    @Convert(converter = RoomChallengeConverter.class)
-    private RoomChallenge currentRoomChallenge;
+    @Column(name = "current_room_id")
+    private int currentRoomId;
 
-    @ElementCollection
-    @CollectionTable(name = "solved_challenges", joinColumns = @JoinColumn(name = "gamestate_id"))
-    @MapKeyColumn(name = "challenge_name")
-    @Column(name = "is_solved")
-    private Map<String, Boolean> solvedChallenges;
+    @Column(name = "current_challenge_id")
+    private int currentChallengeId;
 }
