@@ -159,6 +159,17 @@ public class LobbyResource {
         return Response.ok(newChallenge).build();
     }
 
+    @GET
+    @Path("/{lobbyId}/help")
+    @Transactional
+    public String getHelp(@PathParam("lobbyId") String lobbyId) throws InterruptedException {
+        var gameState = gameStateRepository.findById(lobbyId);
+        if (gameState != null) {
+            return challengeRepository.findById(String.valueOf(gameState.getCurrentChallengeId())).getHint();
+        }
+        return "no hint available";
+    }
+
     @POST
     @Path("/diary")
     @Consumes(MediaType.APPLICATION_JSON)

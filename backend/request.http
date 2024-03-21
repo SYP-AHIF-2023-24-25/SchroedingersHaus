@@ -44,3 +44,6 @@ Content-Type: application/json
   "chapter": "Kapitel 1",
   "entry": "Text"
 }
+
+### Test for a hint
+GET {{url}}/zNcvrl/help
