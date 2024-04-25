@@ -41,11 +41,11 @@ public class ChatService {
     }
 
     public void ReloadFilter(){
-        filter.reloadFilter();
+        //filter.reloadFilter();
     }
 
     public String CheckMessage(String input){
-        return filter.filterText(input);
+        return input; //filter.filterText(input);
     }
 
     public boolean AddLobby(String lobbyId){

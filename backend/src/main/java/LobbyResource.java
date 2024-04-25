@@ -104,13 +104,13 @@ public class LobbyResource {
         return Response.ok(gameState).build();
     }
 
-    @GET
+    /*@GET
     @Path("/reloadProfanityFilter")
     public Response reloadFilter() throws InterruptedException {
         chatService.ReloadFilter();
         System.out.println("Filter Reloaded");
         return Response.ok().build();
-    }
+    }*/
 
 
     //fragt nur ab ob die lobby eh existiert

@@ -27,4 +27,7 @@ public class Diary {
 
     @Column(name = "entry")
     private String entry;
+
+    @Column(name = "date")
+    private String date;
 }

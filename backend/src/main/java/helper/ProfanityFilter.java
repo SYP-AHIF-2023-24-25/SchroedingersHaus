@@ -2,11 +2,6 @@ package helper;
 
 import jakarta.enterprise.context.ApplicationScoped;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +15,7 @@ public class ProfanityFilter {
 
 
 
-    public static void ProfanityFilter() {
+    /*public static void ProfanityFilter() {
         loadConfigs();
     }
 
@@ -61,7 +56,7 @@ public class ProfanityFilter {
             e.printStackTrace();
         }
 
-    }
+    }*/
 
 
     /**
@@ -70,7 +65,7 @@ public class ProfanityFilter {
      * @param input
      * @return
      */
-
+    /*
     public static ArrayList<String> badWordsFound(String input) {
         if (input == null) {
             return new ArrayList<>();
@@ -133,4 +128,5 @@ public class ProfanityFilter {
     public static void reloadFilter() {
         loadConfigs();
     }
+    */
 }
