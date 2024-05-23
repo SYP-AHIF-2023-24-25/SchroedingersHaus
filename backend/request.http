@@ -7,6 +7,8 @@
 ### Tests for endpoints
 @url=http://localhost:8080/lobby
 
+###@url=http://140.238.216.80:8080/lobby
+
 ### Test for adding a Lobby
 POST {{url}}
 
@@ -44,3 +46,9 @@ Content-Type: application/json
   "chapter": "Kapitel 1",
   "entry": "Text"
 }
+
+### Test for getting a Ping
+GET {{url}}/ping?hostName=db
+
+### Test for getting a Ping
+GET http://140.238.216.80:8080/lobby/ping?hostName=db

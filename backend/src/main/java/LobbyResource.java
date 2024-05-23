@@ -14,6 +14,8 @@ import repository.DiaryRepository;
 import repository.GameStateRepository;
 import repository.LobbyRepository;
 
+import java.io.IOException;
+import java.net.InetAddress;
 import java.util.Collection;
 
 
@@ -179,6 +181,21 @@ public class LobbyResource {
         System.out.println("Diary Entry" + newDiary.getChapter() + " created");
         return Response.ok().build();
     }
+
+    @GET
+    @Path("/ping")
+    @Transactional
+    public Response ping (@QueryParam("hostName") String hostName) {
+        Boolean reachable = false;
+        try {
+            reachable = InetAddress.getByName(hostName).isReachable(1000);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return Response.status(Response.Status.BAD_REQUEST).build();
+        }
+        return Response.ok(reachable).build();
+    }
+
 
     @GET
     @Path("/diary")
