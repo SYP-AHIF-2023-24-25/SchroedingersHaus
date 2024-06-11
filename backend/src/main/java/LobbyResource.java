@@ -142,6 +142,17 @@ public class LobbyResource {
         return lobbyRepository.findAll();
     }
 
+    @GET
+    @Path("/challenge/{challengeId}/")
+    @Transactional
+    public Response getChallenge(@PathParam("challengeId") String challengeId) throws InterruptedException {
+        var challenge = challengeRepository.findById(challengeId);
+        if (challenge == null) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+        return Response.ok(challenge).build();
+    }
+
     @POST
     @Path("/challenge")
     @Consumes(MediaType.APPLICATION_JSON)

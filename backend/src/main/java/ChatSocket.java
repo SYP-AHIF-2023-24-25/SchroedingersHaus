@@ -1,10 +1,9 @@
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Model;
 import jakarta.inject.Inject;
 import jakarta.websocket.*;
 import jakarta.websocket.server.PathParam;
 import jakarta.websocket.server.ServerEndpoint;
-
-import jakarta.enterprise.context.ApplicationScoped;
 
 
 @ApplicationScoped

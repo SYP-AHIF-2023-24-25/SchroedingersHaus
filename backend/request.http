@@ -13,10 +13,10 @@
 POST {{url}}
 
 ### Test for getting a Lobby by LobbyId
-GET {{url}}/zNcvrl
+GET {{url}}/6a7dbI
 
 ### Test for adding a GameState
-POST {{url}}/nGDbCK/gameState
+POST {{url}}/6a7dbI/gameState
 Content-Type: application/json
 
 {
@@ -36,6 +36,9 @@ Content-Type: application/json
   "description": "Description",
   "hint": "Hint"
 }
+
+### Test for getting a Challenge
+GET {{url}}/challenge/1
 
 ### Test for adding a Diary Entry
 POST {{url}}/diary
