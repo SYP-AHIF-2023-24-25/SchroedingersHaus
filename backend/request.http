@@ -5,7 +5,7 @@
 ###GET http://140.238.216.80:8080/lobby/UoGVzm
 
 ### Tests for endpoints
-@url=http://localhost:8080/lobby
+@url=http://10.214.65.158:8080/lobby
 
 ###@url=http://140.238.216.80:8080/lobby
 
@@ -16,7 +16,7 @@ POST {{url}}
 GET {{url}}/6a7dbI
 
 ### Test for adding a GameState
-POST {{url}}/6a7dbI/gameState
+POST {{url}}/gSVoxR/gameState
 Content-Type: application/json
 
 {
@@ -25,7 +25,7 @@ Content-Type: application/json
 }
 
 ### Test for getting a GameState
-GET {{url}}/AZMiiL/gameState
+GET {{url}}/gSVoxR/gameState
 
 ### Test for adding a Challenge
 POST {{url}}/challenge
@@ -54,4 +54,4 @@ Content-Type: application/json
 GET {{url}}/ping?hostName=db
 
 ### Test for getting a Ping
-GET http://140.238.216.80:8080/lobby/ping?hostName=db
+GET http://10.214.65.158:8080/lobby/ping?hostName=db

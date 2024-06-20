@@ -21,6 +21,7 @@ import { TeamComponent } from './team/team.component';
 import { HowToPlayComponent } from './how-to-play/how-to-play.component';
 import { TrailerComponent } from './trailer/trailer.component';
 import { CodeComponent } from './code/code.component';
+import { LiveViewComponent } from './live-view/live-view.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CodeComponent } from './code/code.component';
     TeamComponent,
     HowToPlayComponent,
     TrailerComponent,
-    CodeComponent
+    CodeComponent,
+    LiveViewComponent
   ],
   imports: [
     BrowserModule,

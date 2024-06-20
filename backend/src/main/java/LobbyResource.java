@@ -14,8 +14,12 @@ import repository.DiaryRepository;
 import repository.GameStateRepository;
 import repository.LobbyRepository;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.InetAddress;
+import java.nio.file.Files;
 import java.util.Collection;
 
 
@@ -213,6 +217,47 @@ public class LobbyResource {
     @Transactional
     public Collection<Diary> getAllDiaries(){
         return diaryRepository.findAll();
+    }
+
+    @POST
+    @Path("/{lobbyId}/screenshot")
+    @Consumes(MediaType.APPLICATION_OCTET_STREAM)
+    @Transactional
+    public Response receiveScreenshot(@PathParam("lobbyId") String lobbyId, byte[] imageData) {
+        String filename = "../frontend/src/assets/img/LiveView.png";
+        try (FileOutputStream fos = new FileOutputStream(filename)) {
+            fos.write(imageData);
+            fos.flush();
+            System.out.println("Screenshot saved: " + filename);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).build();
+        }
+
+        return Response.ok().build();
+    }
+
+    @GET
+    @Path("/{lobbyId}/screenshot")
+    @Produces("image/png") // Set the correct MIME type for your screenshot format
+    public Response getScreenshot(@PathParam("lobbyId") String lobbyId) {
+        String filename = "../frontend/src/assets/img/LiveView.png";
+
+        File file = new File(filename);
+
+        if (!file.exists()) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        try {
+            FileInputStream fis = new FileInputStream(file);
+            byte[] imageData = Files.readAllBytes(file.toPath());
+            fis.close();
+            return Response.ok(imageData).build();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).build();
+        }
     }
 
 
