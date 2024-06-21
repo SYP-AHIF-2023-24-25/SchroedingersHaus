@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, ElementRef, OnDestroy, OnInit, ViewChild,  ChangeDetectorRef } from '@angular/core';
 import {ChatService} from "../../shared/chat.service";
 import {UserService} from "../../shared/user.service";
 import {ActivatedRoute, Params, Router} from "@angular/router";
@@ -16,6 +16,10 @@ export class ChatComponent implements OnInit, OnDestroy {
   public messages: MessageDisplay[] | null;
   public message: string | null;
   public users: string | null;
+  @ViewChild('liveImage') liveImage!: ElementRef<HTMLImageElement>;
+  private intervalId: any;
+  public imageUrl = 'http://http://192.168.0.13/:8080/lobby/dJaqO3/screenshot';
+
 
   private page: number = 0;
   diary: any = diaryData[this.page];
@@ -23,7 +27,8 @@ export class ChatComponent implements OnInit, OnDestroy {
   constructor(private readonly chatService: ChatService,
               private readonly userService: UserService,
               private router: Router,
-              private activatedRoute: ActivatedRoute) {
+              private activatedRoute: ActivatedRoute,
+              private cdr: ChangeDetectorRef) {
     this.userName = null;
     this.lobbyId = null;
     this.messages = null;
@@ -60,10 +65,16 @@ export class ChatComponent implements OnInit, OnDestroy {
     console.log(this.lobbyId, this.userName);
     console.log(this.users);
     this.startChat();
+    this.intervalId = setInterval(() => {
+      this.reloadImage();
+    }, 2000);
   }
 
   public ngOnDestroy(): void {
     this.chatService.close();
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
   }
 
   public sendMessage(): void {
@@ -98,6 +109,11 @@ export class ChatComponent implements OnInit, OnDestroy {
   diary() {
     this.router.navigate(['/diary']);
   }*/
+
+  reloadImage(): void {
+    const imgElement = this.liveImage.nativeElement;
+    imgElement.src = this.imageUrl + '?' + new Date().getTime();
+  }
 
 }
 

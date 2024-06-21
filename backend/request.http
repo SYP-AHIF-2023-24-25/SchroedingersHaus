@@ -1,0 +1,57 @@
+###
+###POST http://140.238.216.80:8080/lobby
+
+###
+###GET http://140.238.216.80:8080/lobby/UoGVzm
+
+### Tests for endpoints
+@url=http://10.214.65.158:8080/lobby
+
+###@url=http://140.238.216.80:8080/lobby
+
+### Test for adding a Lobby
+POST {{url}}
+
+### Test for getting a Lobby by LobbyId
+GET {{url}}/6a7dbI
+
+### Test for adding a GameState
+POST {{url}}/gSVoxR/gameState
+Content-Type: application/json
+
+{
+  "currentRoomId": 1,
+  "currentChallengeId": 1
+}
+
+### Test for getting a GameState
+GET {{url}}/gSVoxR/gameState
+
+### Test for adding a Challenge
+POST {{url}}/challenge
+Content-Type: application/json
+
+{
+  "name": "Challenge",
+  "description": "Description",
+  "hint": "Hint"
+}
+
+### Test for getting a Challenge
+GET {{url}}/challenge/1
+
+### Test for adding a Diary Entry
+POST {{url}}/diary
+Content-Type: application/json
+
+{
+  "challengeId": 1,
+  "chapter": "Kapitel 1",
+  "entry": "Text"
+}
+
+### Test for getting a Ping
+GET {{url}}/ping?hostName=db
+
+### Test for getting a Ping
+GET http://10.214.65.158:8080/lobby/ping?hostName=db

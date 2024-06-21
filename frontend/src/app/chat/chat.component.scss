@@ -90,6 +90,10 @@ body {
   font-weight: bold;
 }
 
+#lobbyId{
+  font-weight: bold;
+}
+
 .col-3 menu{
   display: flex;
   width: 100%;
@@ -118,6 +122,11 @@ body {
 }
 
 #spielerId{
+  margin-top: 2vh;
+  color: $button;
+}
+
+#lobbyId{
   margin-top: 2vh;
   color: $button;
 }

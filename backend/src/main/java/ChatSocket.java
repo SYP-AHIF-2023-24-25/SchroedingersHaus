@@ -1,16 +1,18 @@
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-import javax.websocket.*;
-import javax.websocket.server.PathParam;
-import javax.websocket.server.ServerEndpoint;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.inject.Model;
+import jakarta.inject.Inject;
+import jakarta.websocket.*;
+import jakarta.websocket.server.PathParam;
+import jakarta.websocket.server.ServerEndpoint;
 
 
 @ApplicationScoped
+@Model
 @ServerEndpoint("/chat/{lobbyId}/{username}")
 public final class ChatSocket {
 
     @Inject
-    private ChatService chatService;
+    ChatService chatService;
 
 
     @OnOpen
@@ -47,19 +49,19 @@ public final class ChatSocket {
                           @PathParam("lobbyId") String lobbyId) {
 
         /*
-        * JSONObject jo = new JSONObject();
-        * jo.put("type", "chat");
-        * jo.put("text", message); either
-        * jo.put("state", null); or
-        *
-        * jo.put("type", "puzzle");
-        * jo.put("text", null); either
-        * jo.put("state", message); or
-        *
-        * if(jo.getString("type") == "chat") {
-        * }
-        *
-        * */
+         * JSONObject jo = new JSONObject();
+         * jo.put("type", "chat");
+         * jo.put("text", message); either
+         * jo.put("state", null); or
+         *
+         * jo.put("type", "puzzle");
+         * jo.put("text", null); either
+         * jo.put("state", message); or
+         *
+         * if(jo.getString("type") == "chat") {
+         * }
+         *
+         * */
         if (message.equalsIgnoreCase("_ready_")) {
             broadcast("User " + username + " joined", lobbyId);
         }
