@@ -179,3 +179,9 @@ Unser Ziel ist es, ein Escape Room VR-Spiel zu entwickeln, welches die HTL Leond
 
 <a href="https://github.com/orgs/SYP-AHIF-2023-24-25/projects/5/views/4">alle sprints</a>
 
+### Team Capacity 
+13 Stunden pro Woche
+
+### Team Velocity 
+10 Storypoints
+
