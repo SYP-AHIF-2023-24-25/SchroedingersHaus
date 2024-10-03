@@ -180,11 +180,11 @@ Unser Ziel ist es, ein Escape Room VR-Spiel zu entwickeln, welches die HTL Leond
 <a href="https://github.com/orgs/SYP-AHIF-2023-24-25/projects/5/views/4">alle sprints</a>
 
 ### Storypoints 
-Tiny: 1
-Small: 3
-Medium: 5
-Large: 8
-X-Large: 13
+* Tiny: 1
+* Small: 3
+* Medium: 5
+* Large: 8
+* X-Large: 13
 
 ### Team Capacity 
 13 Stunden pro Woche
