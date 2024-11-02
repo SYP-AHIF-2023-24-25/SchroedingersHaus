@@ -1,7 +1,7 @@
 import {webSocket, WebSocketSubject} from "rxjs/webSocket";
 import {Subject} from "rxjs";
 
-export const BASE_URL = 'localhost:8080';
+export const BASE_URL = 'localhost:5268/api/v1';
 
 export class WebSocket<T> {
 

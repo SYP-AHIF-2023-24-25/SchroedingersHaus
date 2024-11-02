@@ -17,7 +17,7 @@ export class LobbyService {
   }
 
   public async requestLobbyStatus(lobbyId: string): Promise<boolean>{
-    const response = this.http.get<LoginResult>(URL + lobbyId);
+    /*const response = this.http.get<LoginResult>(URL + lobbyId);
     console.log(response);
     const result = await firstValueFrom(response);
     console.log(result.success);
@@ -28,8 +28,18 @@ export class LobbyService {
       
     }
     console.log("false");
-    return false;
-
+    return false;*/
+    try {
+      
+      const response = this.http.get<LoginResult>(`${URL}${lobbyId}`);
+      const result = await firstValueFrom(response);
+      console.log(result.success);
+      this.lobbyId = result.success ? lobbyId : null;
+      return result.success;
+    } catch (error) {
+      console.error("Error fetching lobby status:", error); // Verbessere die Fehlerausgabe
+      return false; // oder eine andere Fehlerbehandlung
+    }
   }
 }
 

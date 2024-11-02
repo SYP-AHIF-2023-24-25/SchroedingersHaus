@@ -1,3 +1,171 @@
+<!--head>
+  <title>Chat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <title>Testing QR code</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type="text/javascript">
+    function generateBarCode()
+    {
+      var nric = $('#text').val();
+      var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + nric + '&amp;size=50x50';
+      $('#barcode').attr('src', url);
+    }
+  </script>
+</head>
+
+<body>
+<input id="generateBarCode" type="text"
+       value="" style="Width:0%"
+       onblur='generateBarCode();' />
+
+<img id='barcode'
+     src="https://api.qrserver.com/v1/create-qr-code/?data=http://localhost:4200/login-user/{{this.lobbyId}}&amp;size=100x100"
+     alt=""
+     title="localhost"
+     width="50"
+     height="50" />
+
+<div class="diaryBox">
+  <div class="item">
+    <div class="main">
+      <br>
+      <h2>{{diary.date}}</h2>
+      <p>{{diary.entry}}</p>
+      <br>
+      <button class="buttonText" id="previousButton"(click)="previousPage()">Vorherige Seite</button>
+      <button (click)="nextPage()">Nächste Seite</button>
+    </div>
+  </div>
+</div>
+
+<div class="diaryBox">
+  <div class="chatBox">
+    <label id="spielerId">Spieler: {{user}}</label>
+    <br>
+    <label id="lobbyId">Lobby: {{lobbyId}}</label>
+    < <br>
+    <label>Alle Spieler: {{users}}</label> >
+    <h2>Live Chat</h2>
+    <mat-card *ngIf="true">
+      <mat-card class="message" *ngFor="let msg of messages">
+        <div class="pull-right">
+          {{msg.dateTime | date: "dd.MM.yyyy HH:mm"}}
+        </div>
+        <div id="message">
+          <strong>{{msg.user}}:</strong> {{msg.message}}
+        </div>
+      </mat-card>
+
+      <mat-card class="input" id="inputMessageAll">
+        <mat-form-field>
+          <mat-label>Gib eine Nachricht ein</mat-label>
+          <input matInput type="text"  [(ngModel)]="message" (keydown.enter)='sendMessage()' placeholder="Enter message" autofocus id="inputMessage">
+        </mat-form-field>
+        <button id="sendMessageBtn" mat-raised-button color="primary" [disabled]="!message" (click)="sendMessage()">Senden</button>
+      </mat-card>
+    </mat-card>
+  </div>
+</div>
+
+<div class="diaryBox">
+  <h2>Live View</h2>
+  <img #liveImage [src]="imageUrl" alt="image" style="height: 50%">
+
+</div>
+
+<mat-card>
+
+</mat-card-->
+
+<!--head>
+  <title>Chat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body>
+<input id="generateBarCode" type="text" value="" style="Width:0%" onblur='generateBarCode();' />
+
+<img id='barcode'
+     src="https://api.qrserver.com/v1/create-qr-code/?data=http://localhost:4200/login-user/{{lobbyId}}&amp;size=100x100"
+     alt=""
+     title="localhost"
+     width="50"
+     height="50" />
+
+<div class="diaryBox">
+  <div class="item">
+    <div class="main">
+      <br>
+      <h2>{{diary.date}}</h2>
+      <p>{{diary.entry}}</p>
+      <br>
+      <button class="buttonText" id="previousButton" (click)="previousPage()">Vorherige Seite</button>
+      <button (click)="nextPage()">Nächste Seite</button>
+    </div>
+  </div>
+</div>
+
+<div class="chatBox">
+  <label id="spielerId">Spieler: {{user}}</label>
+  <br>
+  <label id="lobbyId">Lobby: {{lobbyId}}</label>
+  <h2>Live Chat</h2>
+  <mat-card *ngIf="true">
+    <mat-card class="message" *ngFor="let msg of messages">
+      <div id="message">
+        <strong>{{msg.user}}:</strong> {{msg.message}}
+      </div>
+    </mat-card>
+
+    <mat-card class="input" id="inputMessageAll">
+      <mat-form-field>
+        <mat-label>Gib eine Nachricht ein</mat-label>
+        <input matInput type="text" [(ngModel)]="message" (keydown.enter)='sendMessage()' placeholder="Enter message" autofocus id="inputMessage">
+      </mat-form-field>
+      <button id="sendMessageBtn" mat-raised-button color="primary" [disabled]="!message" (click)="sendMessage()">Senden</button>
+    </mat-card>
+  </mat-card>
+</div>
+
+<div class="chatBox">
+  <h2>Live Chat</h2>
+
+  < Nachrichtenverlauf>
+  <div class="messageContainer">
+    <div *ngFor="let msg of messages" class="message">
+      <strong>{{ msg.user }}:</strong> {{ msg.message }}
+    </div>
+  </div>
+
+  < Eingabefeld für neue Nachrichten>
+  <mat-form-field>
+    <mat-label>Gib eine Nachricht ein</mat-label>
+    <input matInput type="text" [(ngModel)]="message" (keydown.enter)="sendMessage()" placeholder="Enter message" autofocus>
+  </mat-form-field>
+  <button mat-raised-button color="primary" [disabled]="!message" (click)="sendMessage()">Senden</button>
+</div>
+
+<div class="diaryBox">
+  <h2>Live View</h2>
+</div>
+
+<mat-card></mat-card>
+
+<script type="text/javascript">
+  function generateBarCode() {
+    var nric = $('#text').val();
+    var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + nric + '&amp;size=50x50';
+    $('#barcode').attr('src', url);
+  }
+</script>
+</body-->
+
 <head>
   <title>Chat</title>
   <meta charset="UTF-8">
@@ -43,19 +211,19 @@
 
 <div class="diaryBox">
   <div class="chatBox">
-    <label id="spielerId">Spieler: {{userName}}</label>
+    <label id="spielerId">Spieler: {{user}}</label>
     <br>
     <label id="lobbyId">Lobby: {{lobbyId}}</label>
     <!-- <br>
     <label>Alle Spieler: {{users}}</label> -->
     <h2>Live Chat</h2>
     <mat-card *ngIf="messages !== null">
-      <mat-card class="message" *ngFor="let message of displayMessages">
-        <div class="pull-right">
+      <mat-card class="message" *ngFor="let message of messages">
+        <!--div class="pull-right">
           {{message.dateTime | date: "dd.MM.yyyy HH:mm"}}
-        </div>
+        </div-->
         <div id="message">
-          {{message.message}}
+          {{message}}
         </div>
       </mat-card>
 
@@ -72,7 +240,7 @@
 
 <div class="diaryBox">
   <h2>Live View</h2>
-  <img #liveImage [src]="imageUrl" alt="image" style="height: 50%">
+  <!--img #liveImage [src]="imageUrl" alt="image" style="height: 50%"-->
 
 </div>
 

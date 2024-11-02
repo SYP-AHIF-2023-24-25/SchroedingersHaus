@@ -1,0 +1,19 @@
+###
+###POST http://localhost:5268/api/v1/lobby
+
+###
+###GET http://140.238.216.80:8080/lobby/UoGVzm
+
+### Tests for endpoints
+@url=http://localhost:5268/api/v1/lobby
+
+###@url=http://140.238.216.80:8080/lobby
+
+### Test for adding a Lobby
+POST {{url}}
+
+### Test for getting all Lobbies
+GET {{url}}/getAllLobbies
+
+### Test for getting a Lobby by LobbyId
+GET {{url}}/hWSBce
