@@ -1,5 +1,4 @@
-@import "src/styles";
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Roboto:wght@300;400&display=swap');
+@import "../../../src/styles";
 
 .pull-right {
   @extend .container !optional;
@@ -20,7 +19,7 @@ button{
   margin-right: 2vw;
   padding-top: 10px;
   margin-bottom: 40px;
-  background-color: $button;
+  background-color: #db7f8e;
   //width: 20vw;
   border-radius: 6px;
   border: none;
@@ -42,7 +41,9 @@ body {
 .main {
   height: 65vh;
   /* padding: 1%;*/
+  margin-left: 3%;
   width: 97%;
+  font-family: "Segoe Script";
   //font-weight: bold;
   font-size: 2vh;
   margin-bottom: 2vh;
@@ -52,6 +53,7 @@ body {
 
 .button:after {
   content: "";
+  background: cadetblue;
   margin-left: -20px !important;
   margin-top: -120%;
   opacity: 0;
@@ -90,10 +92,6 @@ body {
   font-weight: bold;
 }
 
-#lobbyId{
-  font-weight: bold;
-}
-
 .col-3 menu{
   display: flex;
   width: 100%;
@@ -104,6 +102,10 @@ body {
 
 .row{
   width: 55%;
+}
+
+.main h2{
+  font-family: "Segoe Script";
 }
 
 #previousButton{
@@ -123,12 +125,7 @@ body {
 
 #spielerId{
   margin-top: 2vh;
-  color: $button;
-}
-
-#lobbyId{
-  margin-top: 2vh;
-  color: $button;
+  color: #db7f8e;
 }
 
 .pull-right{
@@ -139,71 +136,47 @@ body {
   body {
     flex-direction: column;
   }
+  .diaryBox{
+    margin-left: 3%;
+  }
+
+
+
 }
 
 #generateBarCode{
   opacity: 0%;
 }
 mat-label{
-  color: $button;
+  color: #db7f8e;
 }
 
 #barcode{
   padding-top: 1vh;
 }
 
-.chatBox[_ngcontent-dwq-c103] input{
-  width: 5vw;
-  box-shadow: none;
-}
-
-.chatBox[_ngcontent-rhe-c103] {
-  flex: 33%;
-  background-color: #fff;
-  padding: 10px;
-  width: 30vw;
-  border-radius: 40px;
-}
-
-.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+.sendMessageBtn{
+  color: #db7f8e;
+  background-color: #db7f8e;
   width: 20vw;
-}
-
-.mat-card:not([class*="mat-elevation-z"]){
-  box-shadow: none;
-}
-
-#sendMessageBtn{
-  width: 5vw !important;
-  border-radius: 10px;
-  margin-left: 1vw;
 }
 
 .mat-button.mat-success,
 .mat-stroked-button.mat-success {
-  color: $button;
+  color: #db7f8e;
 }
 
-.mat-card {
-  display: block;
-  position: relative;
-  width: 30vw;
-}
-
-#message{
-  box-shadow: none;
-  width: 30vw;
-}
-
-#inputMessageAll{
-  box-shadow: none;
-  width: 40vw;
-}
 
 :host ::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple {
-  background-color: $button;
+  background-color: #db7f8e;
 }
 
 .mat-spinner-color::ng-deep circle{
-  stroke: $button !important;
+  stroke: #db7f8e !important;
 }
+
+input {
+
+}
+
+
