@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ImportConsoleApp
-build_property.ProjectDir = /Users/sophje/Desktop/Klasse5/SYP/SchroedingersHaus/ImportConsoleApp/
+build_property.ProjectDir = C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\SchrödingerC#\SchroedingersHaus\ImportConsoleApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
