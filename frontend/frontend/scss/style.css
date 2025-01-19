@@ -72,11 +72,12 @@ game-component {
 
 /*****LIVE-VIEW****/
 live-view-component {
+  display: none;
   grid-area: live-view;
   max-height: 98%;
   max-width: 97.5%;
   background-color: #D9D9D9;
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -172,7 +173,8 @@ message-component .name {
 
 /*****MAP****/
 map-component {
-  grid-area: map;
+  /*grid-area: map;*/
+  height: 700px;
 }
 map-component > div {
   margin-top: 6.5%;
@@ -200,6 +202,15 @@ map-component .room h2 {
   font-weight: bold;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.5);
+}
+map-component .room button {
+  height: 30px;
+  width: 150px;
+  margin: 1.5em;
+  border-radius: 6px;
+  border: none;
+  background-color: white;
+  font-weight: bold;
 }
 map-component #room1 {
   background-image: url("../images/kinderzimmer.jpeg");
@@ -260,9 +271,10 @@ map-component #room4 {
 
 /*****DIARY****/
 .diary {
-  grid-area: diary;
+  height: 700px;
+  /*grid-area: diary;*/
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
 }
 .diary p {
   text-align: left;
@@ -293,9 +305,10 @@ diary-component > div {
 }
 
 .diary-container {
+  height: 600px;
   display: flex;
   flex-direction: column;
-  height: 200px; /* Set a fixed height for the diary */
+  /*height: 200px; /* Set a fixed height for the diary */
   width: 440px; /* Set a fixed width for the diary */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
