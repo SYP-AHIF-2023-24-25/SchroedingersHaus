@@ -1,0 +1,42 @@
+services:
+  backend:
+    image: sophieboehm/webapi:latest
+    container_name: webapi_backend
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Server=mysql_db;Port=3306;Database=schroedingershaus;User=schroedingers;Password=schroedings
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.webapi.rule=Host(`localhost`) && PathPrefix(`/`)"
+      - "traefik.http.services.webapi.loadbalancer.server.port=8080"
+    depends_on:
+      - mysql
+    ports:
+      - 8080:8080
+    networks:
+      - schroedingersnet
+
+  mysql:
+    image: mysql:8.4.3
+    container_name: mysql_db
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: schroedingers
+      MYSQL_PASSWORD: schroedings
+      MYSQL_DATABASE: schroedingershaus
+    volumes:
+      - schroedingers-data:/var/lib/mysql
+    networks:
+      - schroedingersnet
+
+networks:
+  schroedingersnet:
+    external: false
+
+volumes:
+  schroedingers-data:
+    name: schroedings-data
