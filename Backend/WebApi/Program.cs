@@ -57,7 +57,9 @@ app.UseWebSockets(); // WebSocket-Middleware aktivieren
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapHub<ChatHub>("/chatHub");
+app.MapHub<ChatHub>("/chat");
+app.MapHub<ScreenshotHub>("/screenshot");
+
 
 var scope = app.Services.CreateScope();
 var unitOfWork = scope.ServiceProvider.GetService<IUnitOfWork>();

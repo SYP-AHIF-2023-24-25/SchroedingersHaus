@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{31F997A6-EAA8-4635-B8EE-E788A83958B3}|WebApi\\WebApi.csproj|c:\\users\\emina abazovic\\desktop\\htl\\5ahif\\syp\\git\\schroedingershaus\\backend\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31F997A6-EAA8-4635-B8EE-E788A83958B3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31F997A6-EAA8-4635-B8EE-E788A83958B3}|WebApi\\WebApi.csproj|c:\\users\\emina abazovic\\desktop\\htl\\5ahif\\syp\\git\\schroedingershaus\\backend\\webapi\\controllers\\screenshotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31F997A6-EAA8-4635-B8EE-E788A83958B3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\screenshotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C343DA4A-541B-4A54-9DC6-88D71ECFA231}|Persistence\\Persistence.csproj|c:\\users\\emina abazovic\\desktop\\htl\\5ahif\\syp\\git\\schroedingershaus\\backend\\persistence\\screenshotshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C343DA4A-541B-4A54-9DC6-88D71ECFA231}|Persistence\\Persistence.csproj|solutionrelative:persistence\\screenshotshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\WebApi\\Program.cs",
+              "RelativeToolTip": "WebApi\\Program.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAADsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T01:45:02.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScreenshotsHub.cs",
+              "DocumentMoniker": "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\Persistence\\ScreenshotsHub.cs",
+              "RelativeDocumentMoniker": "Persistence\\ScreenshotsHub.cs",
+              "ToolTip": "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\Persistence\\ScreenshotsHub.cs",
+              "RelativeToolTip": "Persistence\\ScreenshotsHub.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T01:44:13.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScreenshotsController.cs",
+              "DocumentMoniker": "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\WebApi\\Controllers\\ScreenshotsController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\ScreenshotsController.cs",
+              "ToolTip": "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\WebApi\\Controllers\\ScreenshotsController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\ScreenshotsController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T01:43:01.579Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1587,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

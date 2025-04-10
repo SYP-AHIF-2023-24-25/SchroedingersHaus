@@ -41,3 +41,18 @@
 /Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/Base/obj/Debug/net8.0/Base.pdb
 /Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/Base/obj/Debug/net8.0/Base.genruntimeconfig.cache
 /Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/Base/obj/Debug/net8.0/ref/Base.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\bin\Debug\net8.0\Base.deps.json
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\bin\Debug\net8.0\Base.runtimeconfig.json
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\bin\Debug\net8.0\Base.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\bin\Debug\net8.0\Base.pdb
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\obj\Debug\net8.0\Base.csproj.AssemblyReference.cache
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\obj\Debug\net8.0\Base.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\obj\Debug\net8.0\Base.AssemblyInfoInputs.cache
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\obj\Debug\net8.0\Base.AssemblyInfo.cs
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\obj\Debug\net8.0\Base.csproj.CoreCompileInputs.cache
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\obj\Debug\net8.0\Base.sourcelink.json
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\obj\Debug\net8.0\Base.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\obj\Debug\net8.0\refint\Base.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\obj\Debug\net8.0\Base.pdb
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\obj\Debug\net8.0\Base.genruntimeconfig.cache
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Base\obj\Debug\net8.0\ref\Base.dll

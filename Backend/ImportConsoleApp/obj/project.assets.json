@@ -4333,33 +4333,35 @@
     ]
   },
   "packageFolders": {
-    "/Users/sophje/.nuget/packages/": {}
+    "C:\\Users\\Emina Abazovic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/ImportConsoleApp/ImportConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\ImportConsoleApp\\ImportConsoleApp.csproj",
       "projectName": "ImportConsoleApp",
-      "projectPath": "/Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/ImportConsoleApp/ImportConsoleApp.csproj",
-      "packagesPath": "/Users/sophje/.nuget/packages/",
-      "outputPath": "/Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/ImportConsoleApp/obj/",
+      "projectPath": "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\ImportConsoleApp\\ImportConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\Emina Abazovic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\ImportConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/sophje/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Emina Abazovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/Persistence/Persistence.csproj": {
-              "projectPath": "/Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/Persistence/Persistence.csproj"
+            "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\Emina Abazovic\\Desktop\\HTL\\5AHIF\\SYP\\Git\\SchroedingersHaus\\Backend\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -4404,7 +4406,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

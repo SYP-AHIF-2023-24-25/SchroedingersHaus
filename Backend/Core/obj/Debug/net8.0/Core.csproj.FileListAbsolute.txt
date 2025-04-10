@@ -44,3 +44,19 @@
 /Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/Core/obj/Debug/net8.0/refint/Core.dll
 /Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/Core/obj/Debug/net8.0/Core.pdb
 /Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/Core/obj/Debug/net8.0/ref/Core.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\bin\Debug\net8.0\Core.deps.json
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\bin\Debug\net8.0\Core.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\bin\Debug\net8.0\Core.pdb
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\bin\Debug\net8.0\Base.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\bin\Debug\net8.0\Base.pdb
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\obj\Debug\net8.0\Core.sourcelink.json
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\obj\Debug\net8.0\Core.csproj.Up2Date
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\obj\Debug\net8.0\Core.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\obj\Debug\net8.0\refint\Core.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\obj\Debug\net8.0\Core.pdb
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Core\obj\Debug\net8.0\ref\Core.dll

@@ -56,3 +56,23 @@
 /Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/Persistence/obj/Debug/net8.0/Persistence.pdb
 /Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/Persistence/obj/Debug/net8.0/Persistence.genruntimeconfig.cache
 /Users/sophje/Desktop/Klasse5/SYP/Github/SchroedingersHaus/Persistence/obj/Debug/net8.0/ref/Persistence.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\bin\Debug\net8.0\Persistence.deps.json
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\bin\Debug\net8.0\Persistence.runtimeconfig.json
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\bin\Debug\net8.0\Persistence.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\bin\Debug\net8.0\Persistence.pdb
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\bin\Debug\net8.0\Base.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\bin\Debug\net8.0\Core.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\bin\Debug\net8.0\Base.pdb
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\bin\Debug\net8.0\Core.pdb
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\Persistence.sourcelink.json
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\Persistence.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\refint\Persistence.dll
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\Persistence.pdb
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\Persistence.genruntimeconfig.cache
+C:\Users\Emina Abazovic\Desktop\HTL\5AHIF\SYP\Git\SchroedingersHaus\Backend\Persistence\obj\Debug\net8.0\ref\Persistence.dll
